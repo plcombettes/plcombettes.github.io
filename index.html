@@ -1,0 +1,4380 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Patrick L. Combettes</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <style>
+        *{box-sizing:border-box}
+        .myColumn1{float:left; width:33.33%}
+        .myColumn2{float:left; width:50%}
+        .myRow:after{content:""; display:table; clear:both}
+
+        a{text-decoration:none; color:#CC0000}
+        a:focus{outline:0 !important}
+        a:hover{text-decoration:underline}
+	
+        .stretch{text-align:justify; margin-top:50px}
+        .stretch:after{content:""; display:inline-block; width:100%}
+
+        .myButton{
+            background-color:#CC0000;
+            border:1px solid #FFFFFF;
+            display:inline-block;
+            cursor:pointer;
+            color:#FFFFFF;
+            font-family:verdana;
+            font-size:16px;
+            padding:8px 20px;
+            font-weight:bold;
+        }
+        .myButton:active{background-color:#990000}
+        .myButton:focus{outline:0 !important}
+        .myButton:hover{text-decoration:underline}
+        .myButton::-moz-focus-inner{border:0}
+
+        @media (max-width:600px) {#photo {display:none}}
+        @media (max-width:600px) {#desktopButtons {display:none}}
+        @media (min-width:601px) {#mobileButtons {display:none}}
+    </style>
+</head>
+
+<body bgcolor="#FFFFFF" style="font-family:verdana; margin:auto;
+max-width:750px; padding:20px; line-height:1.3">
+
+<div class="row">
+    <div id="photo" class="column" style="float:right">
+        <img src="patrick-combettes.jpg" alt="photo" style="width:156px; height:200px">
+    </div>
+
+    <div class="column">
+        <h1>Patrick L. Combettes</h1>
+        
+        <p>Distinguished  Professor, IEEE Fellow, SIAM Fellow<br>
+        Department of Mathematics<br>
+        North Carolina State University</p>
+        
+        <p><i class="fas fa-desktop"></i>&nbsp;&nbsp;SAS Hall 3276<br>
+        <i class="fas fa-phone fa-flip-horizontal"></i>&nbsp;&nbsp;+1 (919) 515-2671<br>
+        <i class="far fa-envelope"></i>&nbsp;&nbsp;[my3initials]@math.ncsu.edu</p>
+    </div>
+</div>
+
+<div id="desktopButtons" class="myRow" style="padding-top:30px; padding-bottom:15px">
+    <div class="myColumn1">
+        <a href="https://link.springer.com/book/10.1007/978-3-319-48311-5"><img src="front-cover.jpg" alt="book" style="width:177px; height:267px"></a>
+
+<em style="font-size:75%; color:#808080">Corrected 2nd ed., 2019</em>
+    </div>
+
+    <div class="myColumn1">
+        <button class="myButton" onclick="openTab('Publications')" style="margin-top:10px">Publications</button><br>
+        <button class="myButton" onclick="openTab('Citations')" style="margin-top:10px">Citations</button><br>
+        <button class="myButton" onclick="openTab('Events')" style="margin-top:10px">Events</button><br>
+        <button class="myButton" onclick="openTab('People')" style="margin-top:10px">People</button><br>
+        <a class="myButton" href="http://proximity-operator.net/" target="_blank" style="margin-top:10px">Prox repository</a>
+    </div>
+
+    <div class="myColumn1">
+        <button class="myButton" onclick="openTab('Talks')" style="margin-top:10px">Talks</button><br>
+        <button class="myButton" onclick="openTab('Teaching')" style="margin-top:10px">Teaching</button><br>
+        <button class="myButton" onclick="openTab('Genealogy')" style="margin-top:10px">Genealogy</button><br>
+        <button class="myButton" onclick="openTab('Biography')" style="margin-top:10px" id="defaultOpen">Biography</button>
+        <a class="myButton" href="https://pcombet.math.ncsu.edu/1889/history.html" target="_blank" style="margin-top:10px">Maths at NC State</a><br>
+    </div>
+</div>
+
+<div id="mobileButtons" class="myRow" style="padding-top:30px; padding-bottom:15px">
+    <div class="myColumn2">
+        <button class="myButton" onclick="openTab('Publications')">Publications</button><br>
+        <button class="myButton" onclick="openTab('Citations')" style="margin-top:10px">Citations</button><br>
+        <button class="myButton" onclick="openTab('Events')" style="margin-top:10px">Events</button><br>
+        <button class="myButton" onclick="openTab('People')" style="margin-top:10px">People</button><br>
+        <a class="myButton" href="http://proximity-operator.net/" target="_blank" style="margin-top:10px">Prox. repository</a>
+    </div>
+
+    <div class="myColumn2">
+        <button class="myButton" onclick="openTab('Talks')">Talks</button><br>
+        <button class="myButton" onclick="openTab('Teaching')" style="margin-top:10px">Teaching</button><br>
+        <button class="myButton" onclick="openTab('Genealogy')" style="margin-top:10px">Genealogy</button><br>
+        <button class="myButton" onclick="openTab('Biography')" style="margin-top:10px" id="defaultOpen">Biography</button>
+        <a class="myButton" href="https://pcombet.math.ncsu.edu/1889/history.html" target="_blank" style="margin-top:10px">Maths at NC State</a><br>
+    </div>
+</div>
+
+<div id="Biography" class="tabContent">
+    <h2>Biography</h2>
+
+    <h3>Editorial boards</h3>
+
+    <ul>
+        <li>Advances in Approximation Theory, 2026-present</li>
+        <li>Applied Mathematics and Optimization, 2022-present</li>
+        <li>SIAM Journal on Mathematics of Data Science, 2019-present</li>
+        <li>Numerical Algorithms, 2018-present</li>
+        <li>Journal of Nonsmooth Analysis and Optimization, 2019-present</li>
+        <li>Journal of Approximation Theory, 2008-2026
+ (<a href="https://people.math.osu.edu/nevai.1/JAT/">board resignation;</a>
+          <a
+href="https://retractionwatch.com/2026/04/16/45-editors-resign-from-math-journal-former-eic-calls-elsevier-publisher-a-mini-dictator/">
+press article</a>)</li>
+        <li>Journal of Mathematical Analysis and Applications,
+2013-2026 (resignation)</li>
+        <li>SIAM Journal on Imaging Sciences, 2016-2025</li>
+        <li>SIAM Journal on Optimization, 2007-2019</li>
+        <li>IEEE Transactions on Image Processing, 1997-2002</li>
+    </ul>
+
+    <h3>Scientific awards</h3>
+
+    <ul>
+    <li><strong>SIAM Fellow</strong>, 2024<br>
+     For contributions to the theory and applications of convex 
+     optimization, especially proximal methods
+    </li>
+    <li><strong>IEEE Fellow</strong>, 2005<br>
+    For contributions to set-theoretic methods and convex 
+    analysis in signal and image processing
+    </li>
+    <li><strong>Best Paper Award</strong>, 
+    IEEE Signal Processing Society, 1993
+    </li></ul>
+
+    <h3>Administrative positions</h3>
+    
+    <ul><li>
+Founding director (2009-2013) of the 
+<a href ="https://www.cnrs.fr/en/cnrs">CNRS</a>
+research consortium 
+<a href ="https://gdrmoa.math.cnrs.fr/">MOA</a>
+on mathematical optimization and its applications.
+    </li></ul>
+
+
+    <h3>Academic positions</h3>
+    
+    <ul><li>
+    2016-present:<br>
+    <strong>North Carolina State University</strong><br>
+    Department of Mathematics<br>
+    8/2016: Distinguished Professor
+    </li></ul>
+
+    <ul><li>
+    1999-2016:<br>
+    <strong>Universit&eacute; Pierre et Marie Curie &ndash; 
+    Paris 6</strong> (now called "Sorbonne Universit&eacute;"), 
+    <br>
+    Laboratoire Jacques-Louis Lions, Facult&eacute; de 
+    Math&eacute;matiques<br>
+    9/2010: Professeur, classe exceptionnelle (CNU)<br>
+    9/2003: Professeur, premi&egrave;re classe (CNU)<br>
+    9/1999: Professeur, deuxi&egrave;me classe
+    </li></ul>
+
+    <ul><li>  
+    1990-1999:<br>
+    <strong>City University of New York</strong><br>
+    City College and Graduate Center<br>
+    1/1999: Full Professor<br>
+    1/1994: Associate Professor<br>
+    9/1990: Assistant Professor
+    </li></ul>
+
+    <h3>Visiting positions</h3>
+    <ul>
+    <li>
+    Columbia University, New York
+    <li>
+    Courant Institute, New York
+    <li>
+    Simons Foundation, New York
+    <li>
+    Baptist University, Hong Kong
+    <li>
+    Chinese University, Hong Kong
+    <li>
+    University of the Philippines, Diliman
+    <li>
+    Universit&eacute; Paris-Saclay
+    <li>
+    Vietnam Institute for Advanced Studies in Mathematics, Hanoi
+    </li></ul>
+
+</div>
+
+<div id="Publications" class="tabContent">
+    <h2>Publications</h2>
+
+    <table border="0" cellspacing="0" cellpadding="5">
+        <tr valign="top">
+            <td align="right" width="50" style="color:#CC0000">
+                [PRx]<br>
+                [Bx]<br>
+                [Dx]<br>
+                [Jx]<br>
+                [Ex]<br>
+                [Cx]<br>
+                [Sx]<br>
+                [Tr]
+            </td> 
+            <td align="left">
+                Preprint<br>
+                Book<br>
+                Edited book<br>
+                Journal article<br>
+                Book chapter<br>
+                Conference proceedings paper<br>
+                Guest edition of a special issue of a journal<br>
+                Technical report
+            </td>
+        </tr>
+    </table>
+
+<br>
+
+<center><h3 style="color:#CC0000">Preprints</h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[PR2]</td> <td align="left">
+P. L. Combettes and J. I. Madariaga,
+Almost supermartingale extensions of Olivier's theorem.
+[<a href ="https://arxiv.org/abs/2607.02489">arXiv</a>]
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[PR1]</td> <td align="left">
+P. L. Combettes and J. I. Madariaga,
+Asymptotic analysis of an abstract stochastic scheme for
+solving monotone inclusions.
+[<a href ="http://arxiv.org/abs/2512.03023">arXiv</a>]
+</td></tr></table>
+
+
+<center><h3 style="color:#CC0000">2027</h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J115]</td> <td align="left">
+M. N. B&ugrave;i and P. L. Combettes,
+Interchange rules for integral functions,
+<cite><a href
+="https://journals.sns.it/index.php/annaliscienze">Annali della
+Scuola Normale Superiore di Pisa, Classe di Scienze</a></cite>,
+to appear.
+[<a href="pisa1.pdf">pdf</a>] 
+</td></tr></table>
+
+<center><h3 style="color:#CC0000">2026</h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J114]</td> <td align="left">
+P. L. Combettes and D. J. Cornejo,
+Proximal comixture minimization models for image recovery and 
+data analysis.
+<cite><a href ="https://epubs.siam.org/journal/sjisbi">SIAM Journal
+on Imaging Sciences</a></cite>, to appear.
+[<a href="siims4.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J113]</td> <td align="left">
+P. L. Combettes and J. I. Madariaga,
+A geometric framework for stochastic iterations,
+<cite><a href
+="https://pubs.ams.org/journals/mcom/">
+Mathematics of Computation</a></cite>,
+published online 2026-10-23.
+[<a href="moc1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J112]</td> <td align="left">
+P. L. Combettes and J. N. Mayrand,
+Lower bounds on the Haraux function,
+<cite><a href ="https://www.elsevier.com/locate/jat">
+Journal of Approximation Theory</a></cite>, 
+vol. 315, art. 106284 (28 pp.), May 2026.
+[<a href="jat5.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J111]</td> <td align="left">
+P. L. Combettes and D. J. Cornejo,
+Variational analysis of proximal compositions and integral 
+proximal mixtures,
+<cite><a href ="https://www.aimsciences.org/eect">
+Evolution Equations and Control Theory</a></cite>,
+vol. 17, pp. 106&ndash;139, March 2026.
+[<a href="eect1.pdf">pdf</a>] 
+</td></tr></table>
+
+<center><h3 style="color:#CC0000">2025</h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[E06]</td> <td align="left">
+P. L. Combettes,
+La m&eacute;thode du gradient proxim&eacute;,
+<cite><a href ="https://www.techniques-ingenieur.fr/base-documentaire/sciences-fondamentales-th8/mathematiques-ti052/">
+Techniques de l'Ing&eacute;nieur
+&ndash; Sciences Fondamentales/Math&eacute;matiques</a></cite>, 
+art. AF493, 10 pp., July 2025.
+[<a href="ti1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J110]</td> <td align="left">
+P. L. Combettes and J. I. Madariaga,
+Almost-surely convergent randomly activated monotone 
+operator splitting methods,
+<cite><a href ="https://epubs.siam.org/journal/sjisbi">SIAM Journal
+on Imaging Sciences</a></cite>, 
+vol. 18, no. 4, pp. 2177&ndash;2205, October 2025.
+[<a href="siims3.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J109]</td> <td align="left">
+M. N. B&ugrave;i and P. L. Combettes,
+Hilbert direct integrals of monotone operators,
+<cite><a href ="https://www.cambridge.org/core/journals/canadian-journal-of-mathematics">
+Canadian Journal of Mathematics</a></cite>, 
+vol. 77, no. 4, pp. 1425&ndash;1456, August 2025.
+[<a href="cjm1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J108]</td> <td align="left">
+L. M. Brice&ntilde;o-Arias, P. L. Combettes, and F. J. Silva,
+Perspective functions with nonlinear scaling,
+<cite><a href ="https://worldscientific.com/worldscinet/ccm">Communications in Contemporary Mathematics</a></cite>, 
+vol. 27, no. 1, art. 2350065 (37 pp.), January 2025.
+[<a href="ccm2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[C65]</td> <td align="left">
+P. L. Combettes and J. I. Madariaga,
+Stochastic block-iterative parallel subgradient projections
+method with super relaxations,
+<cite><a href ="http://www.eusipco2025.org/">
+Proceedings of the European Signal Processing Conference</a></cite>,
+pp. 2757&ndash;2761. Palermo, Italy, Sept. 8&ndash;12, 2025.
+[<a href="eusipco2025.pdf">pdf</a>] 
+</td></tr></table>
+
+<center><h3 style="color:#CC0000">2024</h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J107]</td> <td align="left">
+M. N. B&ugrave;i and P. L. Combettes,
+Integral resolvent and proximal mixtures,
+<cite><a href ="https://link.springer.com/journal/10957">
+Journal of Optimization Theory and Applications</a></cite>,
+vol. 203, no. 3, pp. 2328&ndash;2353, December 2024.
+[<a href="jota2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J106]</td> <td align="left">
+L. M. Brice&ntilde;o-Arias, P. L. Combettes, and F. J. Silva,
+Proximity operators of perspective functions with nonlinear
+scaling,
+<cite><a href ="https://www.siam.org/publications/journals/siam-journal-on-optimization-siopt">
+SIAM Journal on Optimization</a></cite>, 
+vol. 34, no. 4, pp. 3212&ndash;3234, October 2024.
+[<a href="siopt8.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J105]</td> <td align="left">
+P. L. Combettes,
+The geometry of monotone operator splitting methods,
+<cite><a href ="https://www.cambridge.org/core/journals/acta-numerica">Acta Numerica</a></cite>, 
+vol. 33, pp. 487&ndash;632, September 2024.
+[<a href="acnu1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J104]</td> <td align="left">
+L. M. Brice&ntilde;o-Arias and P. L. Combettes,
+A perturbation framework for convex minimization and monotone
+inclusion problems with nonlinear compositions,
+<cite><a href ="https://pubsonline.informs.org/journal/moor">
+Mathematics of Operations Research</a></cite>, 
+vol. 49, no. 3, pp. 1890&ndash;1914, August 2024.
+[<a href="mor3.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[C64]</td> <td align="left">
+P. L. Combettes and J. I. Madariaga,
+Randomly activated proximal methods for nonsmooth convex 
+minimization,
+<cite><a href ="http://www.eusipco2024.org/">
+Proceedings of the European Signal Processing Conference</a></cite>,
+pp. 2642&ndash;2646. Lyon, France, August 26&ndash;30, 2024.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[C63]</td> <td align="left">
+P. L. Combettes and D. J. Cornejo,
+Signal recovery with proximal comixtures,
+<cite><a href ="http://www.eusipco2024.org/">
+Proceedings of the European Signal Processing Conference</a></cite>,
+pp. 2637&ndash;2641. Lyon, France, August 26&ndash;30, 2024.
+[<a href="eusipco2024-1.pdf">pdf</a>] 
+</td></tr></table>
+
+<center><h3 style="color:#CC0000">2023</h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J103]</td> <td align="left">
+P. L. Combettes,
+Resolvent and proximal compositions,
+<cite><a href ="https://www.springer.com/mathematics/analysis/journal/11228">
+Set-Valued and Variational Analysis</a></cite>, 
+vol. 31, no. 3, art. 22, 29 pp., September 2023.
+[<a href="svva7.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[C62]</td> <td align="left">
+P. L. Combettes, J.-C. Pesquet, and A. Repetti,
+A variational inequality model for learning neural networks,
+<cite><a href ="https://2023.ieeeicassp.org/">
+Proceedings of the IEEE International Conference on Acoustics, 
+Speech, and Signal Processing</a></cite>, 5 pp.
+Rhodes Island, Greece, June 4&ndash;10, 2023.
+[<a href="icassp2023.pdf">pdf</a>] 
+</td></tr></table>
+
+<center><h3 style="color:#CC0000">2022</h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J102]</td> <td align="left">
+M. N. B&ugrave;i and P. L. Combettes,
+Analysis and numerical solution of a modular convex Nash
+equilibrium problem,
+<cite><a href ="http://www.heldermann.de/JCA/jcacover.htm">
+Journal of Convex Analysis</a></cite>, 
+vol. 29, no. 4, pp. 1007&ndash;1021, December 2022. 
+[<a href="jca5.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J101]</td> <td align="left">
+M. N. B&ugrave;i and P. L. Combettes,
+Multivariate monotone inclusions in saddle form,
+<cite><a href ="https://pubsonline.informs.org/journal/moor">
+Mathematics of Operations Research</a></cite>, 
+vol. 47, no. 2, pp. 1082&ndash;1109, May 2022. 
+[<a href="mor2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J100]</td> <td align="left">
+P. L. Combettes and Z. C. Woodstock,
+A variational inequality model for the
+construction of signals from inconsistent nonlinear 
+equations,
+<cite><a href ="https://epubs.siam.org/journal/sjisbi">SIAM Journal
+on Imaging Sciences</a></cite>, 
+vol. 15, no. 1, pp. 84&ndash;109, January 2022. [<a href="siims2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[C61]</td> <td align="left">
+M. N. B&ugrave;i, P. L. Combettes, and Z. C. Woodstock,
+Block-activated algorithms for multicomponent fully
+nonsmooth minimization,
+<cite><a href ="https://2022.ieeeicassp.org/">
+Proceedings of the IEEE International Conference on Acoustics, 
+Speech, and Signal Processing</a></cite>,
+pp. 5428&ndash;5432. Singapore, May 22&ndash;27, 2022.
+[<a href="icassp2022-2.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[C60]</td> <td align="left">
+P. L. Combettes and Z. C. Woodstock,
+Signal recovery from inconsistent nonlinear observations,
+<cite><a href ="https://2022.ieeeicassp.org/">
+Proceedings of the IEEE International Conference on Acoustics, 
+Speech, and Signal Processing</a></cite>,
+pp. 5872&ndash;5876. Singapore, May 22&ndash;27, 2022.
+</td></tr></table>
+
+
+<center><h3 style="color:#CC0000">2021</h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J99]</td> <td align="left">
+M. N. B&ugrave;i and P. L. Combettes,
+Bregman forward-backward operator splitting,
+<cite><a href ="https://www.springer.com/mathematics/analysis/journal/11228">
+Set-Valued and Variational Analysis</a></cite>, 
+vol. 29, no. 3, pp. 583&ndash;603, September 2021. 
+[<a href="svva6.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J98]</td> <td align="left">
+P. L. Combettes and J.-C. Pesquet,
+Fixed point strategies in data science,
+<cite><a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing">
+IEEE Transactions on Signal Processing</a></cite>,
+vol. 69, pp. 3878&ndash;3905, August 2021.
+[<a href="sp14.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="7">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J97]</td> <td align="left">
+P. L. Combettes and Z. C. Woodstock,
+Reconstruction of functions from  prescribed proximal points,
+<cite><a href ="https://www.elsevier.com/locate/jat">
+Journal of Approximation Theory</a></cite>,
+vol. 268, art. 105606, 26 pp., August 2021.
+[<a href="jat4.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J96]</td> <td align="left">
+P. L. Combettes and C. L. M&uuml;ller,  
+Regression models for compositional data: 
+General log-contrast formulations, proximal optimization, 
+and microbiome data applications,
+<cite><a href ="https://www.springer.com/journal/12561">Statistics in Biosciences</a></cite>, 
+vol. 13, no. 2, pp. 217&ndash;242, July 2021.
+[<a href="statbio1.pdf">pdf</a>]
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+<td align="left" width="63" style="color:#CC0000">
+[J95]</td> <td align="left">
+P. L. Combettes and L. E. Glaudin,
+Solving composite fixed point problems with block updates,
+<cite><a href ="https://www.degruyter.com/journal/key/ANONA/html">
+Advances in Nonlinear Analysis</a></cite>, 
+vol. 10, pp. 1154&ndash;1177, March 2021. 
+[<a href="anona1.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+[C59]</td> <td align="left">
+P. L. Combettes and Z. C. Woodstock,
+A fixed point framework for recovering signals from nonlinear
+transformations,
+<cite><a href ="http://www.eusipco2020.org/">
+Proceedings of the European Signal Processing Conference</a></cite>,
+pp. 2120&ndash;2124. Amsterdam, The Netherlands, January
+18&ndash;22, 2021.
+[<a href="eusipco2020.pdf">pdf</a>] 
+</td></tr></table>
+
+<center><h3 style="color:#CC0000">2020</h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+[J94]</td> <td align="left">
+M. N. B&ugrave;i and P. L. Combettes,
+Warped proximal iterations for monotone inclusions,
+<cite><a href ="https://www.journals.elsevier.com/journal-of-mathematical-analysis-and-applications/">Journal of Mathematical 
+Analysis and Applications</a></cite>,
+vol. 491, no. 1, art. 124315, 21 pp., November 2020.
+[<a href="jmaa5.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+	[J93]</td> 
+<td align="left">
+P. L. Combettes and J.-C. Pesquet,
+Deep neural network structures solving variational inequalities,
+<cite><a href ="https://www.springer.com/mathematics/analysis/journal/11228">
+Set-Valued and Variational Analysis</a></cite>, 
+vol. 28, no. 3, pp. 491&ndash;518, September 2020. 
+[<a href="svva5.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+	[J92]</td> 
+<td align="left">
+P. L. Combettes and J.-C. Pesquet,
+Lipschitz certificates for layered network structures driven 
+by averaged activation operators,
+<cite><a href ="https://www.siam.org/publications/journals/siam-journal-on-mathematics-of-data-science-simods">SIAM
+Journal on Mathematics of Data Science</a></cite>, 
+vol. 2, no. 2, pp. 529&ndash;557, June 2020.
+[<a href="simods1.pdf">pdf</a>]
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+	[J91]</td> 
+<td align="left">
+M. N. B&ugrave;i and P. L. Combettes,
+The Douglas-Rachford algorithm converges only weakly,
+<cite><a href ="https://www.siam.org/publications/journals/siam-journal-on-control-and-optimization-sicon">
+SIAM Journal on Control and Optimization</a></cite>, 
+vol. 58, no. 2, pp. 1118&ndash;1120, April 2020.
+[<a href="sicon5.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+	[J90]</td> 
+<td align="left">
+P. L. Combettes and C. L. M&uuml;ller,  
+Perspective maximum likelihood-type estimation via proximal 
+decomposition,
+<cite><a href ="https://imstat.org/journals-and-publications/electronic-journal-of-statistics/">
+Electronic Journal of Statistics</a></cite>, 
+vol. 14, no. 1, pp. 207&ndash;238, January 2020.
+[<a href="ejs1.pdf">pdf</a>] 
+</td></tr></table>
+
+
+
+
+<center><h3><FONT COLOR="#CC0000">2019</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J89]</td> 
+<td align="left">
+	
+P. L. Combettes and L. E. Glaudin,
+Proximal activation of smooth functions in
+splitting algorithms for convex image recovery,
+<cite><a href ="https://epubs.siam.org/journal/sjisbi">SIAM Journal
+on Imaging Sciences</a></cite>, 
+vol. 12, no. 4, pp. 1905&ndash;1935, November 2019.
+[<a href="siims1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">	
+	[J88]</td> 
+<td align="left">
+	
+P. L. Combettes, A. M. McDonald, C. A. Micchelli, and M. Pontil,
+Learning with optimal interpolation norms,
+<cite><a href ="https://www.springer.com/journal/11075">
+Numerical Algorithms</a></cite>, 
+vol. 81, no. 2, pp. 695&ndash;717, June 2019.
+[<a href="numalgo2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J87]</td> 
+<td align="left">
+	
+P. L. Combettes and J.-C. Pesquet,
+Stochastic quasi-Fej&eacute;r block-coordinate fixed 
+point iterations with random sweeping II: Mean-square and linear
+convergence,
+<cite><a href ="https://www.springer.com/mathematics/journal/10107">
+Mathematical Programming</a></cite>, 
+vol. B174, no. 1, pp. 433&ndash;451, April 2019.
+[<a href="mp4.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C58]</td> 
+<td align="left">
+P. L. Combettes and L. E. Glaudin,
+Fully proximal splitting algorithms in image recovery,
+<cite><a href ="http://www.eusipco2019.org/">
+Proceedings of the European Signal Processing Conference</a></cite>,
+pp. 525-529. A Coru&ntilde;a, Spain, September 2&ndash;6, 2019.
+</td></tr></table>
+
+
+<center><h3><FONT COLOR="#CC0000">2018</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J86]</td> 
+<td align="left">
+	
+P. L. Combettes,
+Monotone operator theory in convex optimization,
+<cite><a href ="https://www.springer.com/mathematics/journal/10107">
+Mathematical Programming</a></cite>, 
+vol. B170, no. 1, pp. 177&ndash;206, July 2018.
+[<a href="mp5.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J85]</td> 
+<td align="left">
+	
+P. L. Combettes,  
+Perspective functions: Properties, constructions, and examples,
+<cite><a href ="https://www.springer.com/mathematics/analysis/journal/11228">
+Set-Valued and Variational Analysis</a></cite>, 
+vol. 26, no. 2, pp. 247&ndash;264, June 2018.
+[<a href="svva4.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J84]</td> 
+<td align="left">
+	
+P. L. Combettes and J. Eckstein,
+Asynchronous block-iterative primal-dual decomposition methods 
+for monotone inclusions,
+<cite><a href ="https://www.springer.com/mathematics/journal/10107">
+Mathematical Programming</a></cite>, 
+vol. B168, no. 1, pp. 645&ndash;672, March 2018.
+[<a href="mp2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J83]</td> 
+<td align="left">
+	
+P. L. Combettes and C. L. M&uuml;ller,  
+Perspective functions: Proximal calculus and applications in 
+high-dimensional statistics,
+<cite><a href ="https://www.journals.elsevier.com/journal-of-mathematical-analysis-and-applications/">Journal of Mathematical 
+Analysis and Applications</a></cite>,
+vol. 457, no. 2, pp. 1283&ndash;1306, January 2018.
+[<a href="jmaa4.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J82]</td> 
+<td align="left">
+	
+P. L. Combettes, S. Salzo, and S. Villa,
+Regularized learning schemes in feature Banach spaces,
+<cite><a href ="http://www.worldscientific.com/worldscinet/aa">
+Analysis and Applications</a></cite>, 
+vol. 16, no. 1, pp. 1&ndash;54, January 2018.
+[<a href="anap1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J81]</td> 
+<td align="left">
+	
+P. L. Combettes, S. Salzo, and S. Villa,
+Consistent learning by composite proximal thresholding,
+<cite><a href ="https://www.springer.com/mathematics/journal/10107">
+Mathematical Programming</a></cite>, 
+vol. B167, no. 1, pp. 99&ndash;127, January 2018. 
+[<a href="mp3.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C57]</td> 
+<td align="left">
+	
+P. L. Combettes and J.-C. Pesquet,
+Linear convergence of stochastic block-coordinate fixed point
+algorithms,
+<cite><a href ="http://www.eusipco2018.org/">
+Proceedings of the European Signal Processing Conference</a></cite>,
+pp. 747&ndash;751.  Rome, Italy, September 3&ndash;7, 2018.
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">2017</FONT></h3></center>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[B02]</td> 
+<td align="left">
+	
+H. H. Bauschke and P. L. Combettes, 
+<a href
+="http://www.springer.com/us/book/9783319483108"><i>Convex Analysis
+and Monotone Operator Theory in Hilbert Spaces</i>, 
+second edition</a>.
+Springer, New York, 2017.
+[<A href="http://link.springer.com/book/10.1007/978-3-319-48311-5">pdf</a>]
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J80]</td> 
+<td align="left">
+	
+P. L. Combettes and L. E. Glaudin,
+Quasinonexpansive iterations on the affine hull of orbits: From 
+Mann's mean value algorithm to inertial methods,
+<cite><a href ="https://www.siam.org/publications/journals/siam-journal-on-optimization-siopt">
+SIAM Journal on Optimization</a></cite>, 
+vol. 27, no. 4, pp. 2356&ndash;2380, December 2017.
+[<a href="siopt7.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J79]</td> 
+<td align="left">
+	
+M. Barlaud, W. Belhajali, P. L. Combettes, and L. Fillatre,
+Classification and regression using an outer approximation
+projection-gradient method,
+<cite><a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing">
+IEEE Transactions on Signal Processing</a></cite>,
+vol. 65, no. 17, pp. 4635&ndash;4644, September 2017.
+[<a href="sp13.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<center><h3><FONT COLOR="#CC0000">2016</FONT></h3></center>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J78]</td> 
+<td align="left">
+	
+H. Attouch, L. M. Brice&ntilde;o-Arias, and P. L. Combettes,
+A strongly convergent primal-dual method for nonoverlapping 
+domain decomposition,
+<cite><a href ="https://link.springer.com/journal/211">
+Numerische Mathematik</a></cite>, 
+vol. 133, no. 3, pp. 433&ndash;470, July 2016.
+[<a href="nume1.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J77]</td> 
+<td align="left">
+	
+P. L. Combettes and Q. V. Nguyen,
+Solving composite monotone inclusions in reflexive Banach spaces 
+by constructing best Bregman approximations from their 
+Kuhn-Tucker set,
+<cite><a href ="http://www.heldermann.de/JCA/jcacover.htm">
+Journal of Convex Analysis</a></cite>, 
+vol. 23, no. 2, pp. 481&ndash;510, May 2016. Special issue
+dedicated to the memory of Jean Jacques Moreau.
+[<a href="jca4.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J76]</td> 
+<td align="left">
+	
+P. L. Combettes and &#272;inh D&#361;ng,
+Kolmogorov <i>n</i>-widths of function classes 
+induced by a non-degenerate differential 
+operator: A convex duality approach,
+<cite><a href ="https://www.springer.com/mathematics/analysis/journal/11228">
+Set-Valued and Variational Analysis</a></cite>, 
+vol. 24, no. 1, pp. 83&ndash;99, March 2016.
+[<a href="svva3.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J75]</td> 
+<td align="left">
+	
+P. L. Combettes and J.-C. Pesquet, 
+Stochastic approximations and perturbations in
+forward-backward splitting for monotone operators,
+<cite><a href ="http://www.ybook.co.jp/pafa.html">
+Pure and Applied Functional Analysis</a></cite>, 
+vol. 1, no. 1, pp. 13&ndash;37, January 2016.
+[<a href="pafa1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C56]</td> 
+<td align="left">
+	
+P. L. Combettes and J.-C. Pesquet, 
+Stochastic forward-backward and primal-dual approximation
+algorithms with application to online image restoration,
+<cite><a href ="http://www.eusipco2016.org/">
+Proceedings of the European Signal Processing Conference</a></cite>,
+5 pages. Budapest, Hungary, August 29-September 3, 2016.
+[<a href="eusipco2016.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<center><h3><FONT COLOR="#CC0000">2015</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J74]</td> 
+<td align="left">
+	
+A. Alotaibi, P. L. Combettes, and N. Shahzad,
+Best approximation from the Kuhn-Tucker set
+of composite monotone inclusions,
+<cite><a href ="https://www.tandfonline.com/toc/lnfa20/current">
+Numerical Functional Analysis and Optimization</a></cite>,
+vol. 36, no. 12, pp. 1513&ndash;1532, December 2015.
+[<a href="nfao2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J73]</td> 
+<td align="left">
+	
+P. L. Combettes and J.-C. Pesquet, 
+Stochastic quasi-Fej&eacute;r block-coordinate fixed
+point iterations with random sweeping,
+<cite><a href ="https://www.siam.org/journals/siopt/siopt.htm">
+SIAM Journal on Optimization</a></cite>, 
+vol. 25, no. 2, pp. 1221&ndash;1248, July 2015.
+[<a href="siopt6.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J72]</td> 
+<td align="left">
+	
+P. L. Combettes and I. Yamada,
+Compositions and convex combinations of averaged nonexpansive
+operators,
+<cite><a href ="https://www.journals.elsevier.com/journal-of-mathematical-analysis-and-applications/">Journal of Mathematical Analysis and Applications</a></cite>,
+vol. 425, no. 1, pp. 55&ndash;70, May 2015.
+[<a href="jmaa3.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<center><h3><FONT COLOR="#CC0000">2014</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[S01]</td> 
+<td align="left">
+	
+P. L. Combettes, J.-B. Hiriart-Urruty, and M. Th&eacute;ra
+(Guest editors),
+Modern convex analysis,
+<cite><a href ="https://www.springer.com/mathematics/journal/10107">
+Mathematical Programming</a></cite>,
+vol. B148, nos. 1&ndash;2, December 2014.
+[<a href="mpB2014.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J71]</td> 
+<td align="left">
+	
+A. Alotaibi, P. L. Combettes, and N. Shahzad,
+Solving coupled composite monotone inclusions by successive 
+Fej&eacute;r approximations of their Kuhn-Tucker set,
+<cite><a href ="https://www.siam.org/publications/journals/siam-journal-on-optimization-siopt">
+SIAM Journal on Optimization</a></cite>, 
+vol. 24, no. 4, pp. 2076&ndash;2095, December 2014.
+[<a href="siopt5.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J70]</td> 
+<td align="left">
+	
+M. A. Alghamdi, A. Alotaibi, P. L. Combettes, and N. Shahzad,
+A primal-dual method of partial inverses for composite 
+inclusions,
+<cite><a href ="http://link.springer.com/journal/11590">
+Optimization Letters</a></cite>,
+vol. 8, no. 8, pp. 2271&ndash;2284, December 2014.
+[<a href="optl1.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J69]</td> 
+<td align="left">
+	
+P. L. Combettes and B. C. V&#361;,
+Variable metric forward-backward splitting 
+with applications to monotone inclusions in 
+duality,
+<cite><a href ="https://www.tandf.co.uk/journals/titles/02331934.asp">
+Optimization</a></cite>, 
+vol. 63, no. 9, pp. 1289&ndash;1318, September 2014.
+[<a href="optim2.pdf">pdf</a>]  (published online 2012-12-13)
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J68]</td> 
+<td align="left">
+	
+J.-B. Baillon, P. L. Combettes, and R. Cominetti, 
+Asymptotic behavior of compositions of under-relaxed 
+nonexpansive operators,
+<cite><a href ="https://aimsciences.org/journals/home.jsp?journalID=26">
+Journal of Dynamics and Games</a></cite>,
+vol. 1, no. 3, pp. 331&ndash;346, July 2014.
+[<a href="jdg1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J67]</td> 
+<td align="left">
+	
+S. R. Becker and P. L. Combettes,
+An algorithm for splitting parallel sums 
+of linearly composed monotone operators, with applications to
+signal recovery,
+<cite><a href ="https://www.ybook.co.jp/jnca.html">
+Journal of Nonlinear and Convex Analysis</a></cite>,
+vol. 15, no. 1, pp. 137&ndash;159, January 2014.
+[<a href="jnca2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C55]</td> 
+<td align="left">
+	
+P. L. Combettes, L. Condat, J.-C. Pesquet, and B. C. V&#361;,
+A forward-backward view of some primal-dual optimization
+methods in image recovery,
+<cite><a href ="https://icip2014.wp.mines-telecom.fr/">
+Proceedings of the IEEE International Conference on Image 
+Processing</a></cite>.
+Paris, France, October 27&ndash;30, 2014.
+[<a href="icip2014.pdf">pdf</a>] 
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">2013</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J66]</td> 
+<td align="left">
+	
+P. L. Combettes,
+Systems of structured monotone inclusions:
+Duality, algorithms, and applications,
+<cite><a href ="https://www.siam.org/publications/journals/siam-journal-on-optimization-siopt">
+SIAM Journal on Optimization</a></cite>, 
+vol. 23, no. 4, pp. 2420&ndash;2447, December 2013.
+[<a href="siopt4.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J65]</td> 
+<td align="left">
+	
+P. L. Combettes and N. N. Reyes,
+Moreau's decomposition in Banach spaces,
+<cite><a href ="https://www.springer.com/mathematics/journal/10107">
+Mathematical Programming</a></cite>,
+vol. 139, no. 1, pp. 103&ndash;114, June 2013.
+[<a href="mp1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J64]</td> 
+<td align="left">
+	
+P. L. Combettes and B. C. V&#361;,
+Variable metric quasi-Fej&eacute;r monotonicity,
+<cite><a href ="https://www.sciencedirect.com/science/journal/0362546X">
+Nonlinear Analysis: Theory, Methods, and Applications</a></cite>, 
+vol. 78, pp. 17&ndash;31, February 2013.
+[<a href="nonan3.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[E05]</td> 
+<td align="left">
+	
+L. M. Brice&ntilde;o-Arias and P. L. Combettes,
+Monotone operator methods for Nash equilibria in non-potential 
+games, in:
+<i>Computational and Analytical Mathematics,</i> 
+(D. Bailey, H. H. Bauschke, P. Borwein, F. Garvan, M. Th&eacute;ra, 
+J. Vanderwerff, and H. Wolkowicz, Editors), pp. 143&ndash;159.
+Springer, New York, 2013.
+[<a href="nash.pdf">pdf</a>] 
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">2012</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J63]</td> 
+<td align="left">
+	
+P. L. Combettes and J.-C. Pesquet, 
+Primal-dual splitting algorithm for solving inclusions with 
+mixtures of composite, Lipschitzian, and parallel-sum type 
+monotone operators,
+<cite><a href ="https://www.springer.com/mathematics/analysis/journal/11228">
+Set-Valued and Variational Analysis</a></cite>,
+vol. 20, no. 2, pp. 307&ndash;330, June 2012.
+[<a href="svva2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J62]</td> 
+<td align="left">
+	
+Y. Censor, W. Chen, P. L. Combettes, R. Davidi, and G. T. Herman,
+On the effectiveness of projection methods for convex feasibility
+problems with linear inequality constraints,
+<cite><a href ="https://www.springer.com/mathematics/journal/10589">Computational Optimization and Applications</a></cite>, 
+vol. 51, no. 3, pp. 1065&ndash;1088, April 2012.
+[<a href="coa1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J61]</td> 
+<td align="left">
+	
+J.-B. Baillon, P. L. Combettes, and R. Cominetti, 
+There is no variational characterization of the cycles in 
+the method of periodic projections,
+<cite><a href ="https://www.elsevier.com/locate/jfa">
+Journal of Functional Analysis</a></cite>,
+vol. 262, no. 1, pp. 400&ndash;408, January 2012.
+[<a href="jfa1.pdf">pdf</a>] 
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">2011</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[B02]</td> 
+<td align="left">
+	
+H. H. Bauschke and P. L. Combettes, 
+<cite><a href ="http://www.springer.com/us/book/9783319483108"><i>Convex Analysis and Monotone Operator Theory in Hilbert Spaces</i></a></cite>.
+Springer, New York, 2011.
+[<a href="livre1.pdf">pdf excerpt</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J60]</td> 
+<td align="left">
+	
+L. M. Brice&ntilde;o-Arias and P. L. Combettes,
+A monotone+skew splitting model for composite monotone
+inclusions in duality,
+<cite><a href ="https://www.siam.org/publications/journals/siam-journal-on-optimization-siopt">
+SIAM Journal on Optimization</a></cite>, 
+vol. 21, no. 4, pp. 1230&ndash;1250, October 2011.
+[<a href="siopt3.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J59]</td> 
+<td align="left">
+	
+L. M. Brice&ntilde;o-Arias, P. L. Combettes, J.-C. Pesquet, and N.
+Pustelnik, 
+Proximal algorithms for multicomponent image recovery problems,
+<cite><a href ="https://www.springer.com/computer/image+processing/journal/10851">Journal of Mathematical Imaging and Vision</a></cite>, 
+vol. 41, no. 1, pp. 3&ndash;22, September 2011.
+[<a href="jmiv1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J58]</td> 
+<td align="left">
+	
+P. L. Combettes, &#272;inh D&#361;ng, and B. C. V&#361;,
+Proximity for sums of composite functions,
+<cite><a href ="https://www.journals.elsevier.com/journal-of-mathematical-analysis-and-applications/">
+Journal of Mathematical Analysis and Applications</a></cite>,
+vol. 380, no. 2, pp. 680&ndash;688, August 2011.
+[<a href="jmaa2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[E04]</td> 
+<td align="left">
+	
+P. L. Combettes and J.-C. Pesquet,  Proximal splitting methods in
+signal processing, in:
+<cite><a href ="https://www.springer.com/mathematics/numerical+and+computational+mathematics/book/978-1-4419-9568-1">Fixed-Point Algorithms for Inverse Problems in Science and Engineering</a></cite>,
+(H. H. Bauschke, R. S. Burachik, P. L. Combettes, V. Elser,
+D. R. Luke, and H. Wolkowicz, Editors), pp. 185&ndash;212.
+Springer, New York, 2011.
+[<a href="prox.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[D01]</td> 
+<td align="left">
+	
+H. H. Bauschke, R. S. Burachik, P. L. Combettes, V. Elser,
+D. R. Luke, and H. Wolkowicz (Editors),
+<cite><a href ="https://www.springer.com/mathematics/numerical+and+computational+mathematics/book/978-1-4419-9568-1">Fixed-Point Algorithms for Inverse Problems in Science and Engineering</a></cite>.
+Springer, New York, 2011.
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">2010</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J57]</td> 
+<td align="left">
+	
+P. L. Combettes, &#272;inh D&#361;ng, and B. C. V&#361;,
+Dualization of signal recovery problems,
+<cite><a href ="https://www.springer.com/mathematics/analysis/journal/11228">
+Set-Valued and Variational Analysis</a></cite>,
+vol. 18, pp. 373&ndash;404, December 2010.
+[<a href="svva1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J56]</td> 
+<td align="left">
+	
+H. H. Bauschke and P. L. Combettes, 
+The Baillon-Haddad theorem revisited,
+<cite><a href ="http://www.heldermann.de/JCA/jcacover.htm">
+Journal of Convex Analysis</a></cite>,
+vol. 17, no. 4, pp. 781&ndash;787, December 2010.
+[<a href="jca3.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J55]</td> 
+<td align="left">
+	
+P. L. Combettes and N. N. Reyes,
+Functions with prescribed best linear approximations,
+<cite><a href ="https://www.elsevier.com/locate/jat">
+Journal of Approximation Theory</a></cite>,
+vol. 162, no. 5, pp. 1095&ndash;1116, May 2010.
+[<a href="jat3.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J54]</td> 
+<td align="left">
+	
+H. Attouch, L. M. Brice&ntilde;o-Arias, and P. L. Combettes,
+A parallel splitting method for coupled monotone inclusions,
+<cite><a href ="https://www.siam.org/publications/journals/siam-journal-on-control-and-optimization-sicon">
+SIAM Journal on Control and Optimization</a></cite>, 
+vol. 48, no. 5, pp. 3246&ndash;3270, January 2010.
+[<a href="sicon4.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C54]</td> 
+<td align="left">
+	
+L. M. Brice&ntilde;o-Arias, P. L. Combettes, 
+J.-C. Pesquet, and N. Pustelnik,
+Proximal method for geometry and texture image decomposition,
+<cite><a href ="https://www.icip2010.com/">
+Proceedings of the IEEE International Conference on Image 
+Processing</a></cite>.
+Hong-Kong, September 26&ndash;29, 2010.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C53]</td> 
+<td align="left">
+	
+J. Bolte, P. L. Combettes, and J.-C. Pesquet, 
+Alternating proximal algorithm for blind image recovery,
+<cite><a href ="https://www.icip2010.com/">
+Proceedings of the IEEE International Conference on Image 
+Processing</a></cite>.
+Hong-Kong, September 26&ndash;29, 2010.
+[<a href="icip2010-2.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<center><h3><FONT COLOR="#CC0000">2009</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top"> <td align="left" width="63" style="color:#CC0000">
+
+	
+	[J53]</td> 
+<td align="left">
+	
+P. L. Combettes,
+Iterative construction of the resolvent of a sum of maximal monotone 
+operators, 
+<cite><a href ="httpss://www.heldermann.de/JCA/jcacover.htm">
+Journal of Convex Analysis</a></cite>,
+vol. 16, no. 4, pp. 727-748, December 2009.
+[<a href="jca2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top"> <td align="left" width="63" style="color:#CC0000">
+
+	 [J52]</td> <td align="left">
+	
+L. M. Brice&ntilde;o-Arias and P. L. Combettes, 
+Convex variational formulation with smooth coupling for 
+multicomponent signal decomposition and recovery, 
+<cite><a href ="https://www.global-sci.org/nmtma/">
+Numerical Mathematics: Theory, Methods, and Applications</a></cite>,
+vol. 2, no. 4, pp. 485&ndash;508, November 2009.
+[<a href="nmtma1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+[C52]</td> <td align="left">
+P. L. Combettes and J.-C. Pesquet,  
+Split convex minimization algorithm for signal recovery,
+<cite><a href ="https://www.icassp09.com/">
+Proceedings of the IEEE International Conference on Acoustics, 
+Speech, and Signal Processing</a></cite>,
+pp. 685&ndash;688. Taipei, Taiwan, April 19&ndash;24, 2009.
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">2008</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J51]</td> 
+<td align="left">
+	
+P. L. Combettes and J.-C. Pesquet,
+A proximal decomposition method for solving convex variational
+inverse problems, 
+<cite>
+<a href ="https://www.iop.org/EJ/journal/IP">
+Inverse Problems</a></cite>,
+vol. 24, no. 6, article ID 065014, 27 pp., December 2008.
+[<a href="inv2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J50]</td> 
+<td align="left">
+	
+H. H. Bauschke and P. L. Combettes, 
+A Dykstra-like algorithm for two monotone operators,
+<cite><a href ="https://www.ybook.co.jp/pjo.html">
+Pacific Journal of Optimization</a></cite>, 
+vol. 4, no. 3, pp. 383&ndash;391, September 2008.
+[<a href="pjo2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J49]</td> 
+<td align="left">
+	
+P. L. Combettes and S. A. Hirstoaga, 
+Visco-penalization of the sum of two monotone operators,
+<cite><a href ="https://www.sciencedirect.com/science/journal/0362546X">
+Nonlinear Analysis: Theory, Methods, and Applications</a></cite>, 
+vol. 69, no. 2, pp. 579&ndash;591, July 2008.
+[<a href="nonan2.pdf">pdf</a>] 
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">2007</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J48]</td> 
+<td align="left">
+	
+P. L. Combettes and J.-C. Pesquet,
+A Douglas-Rachford splitting approach to nonsmooth convex variational 
+signal recovery, 
+<cite>
+<a href ="https://www.signalprocessingsociety.org/publications/periodicals/jstsp/">
+IEEE Journal of Selected Topics in Signal Processing</a></cite>,
+vol. 1, no. 4, pp. 564&ndash;574, December 2007.
+[<a href="jstsp1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J47]</td> 
+<td align="left">
+	
+P. L. Combettes and J.-C. Pesquet,
+Proximal thresholding algorithm for minimization over orthonormal bases, 
+<cite>
+<cite><a href ="https://www.siam.org/publications/journals/siam-journal-on-optimization-siopt">
+SIAM Journal on Optimization</a></cite>,
+vol. 18, no. 4, pp. 1351&ndash;1376, November 2007.
+[<a href="siopt2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J46]</td> 
+<td align="left">
+	
+C. Chaux, P. L. Combettes, J.-C. Pesquet, and V. R. Wajs,
+A variational formulation for frame-based inverse problems, 
+<cite>
+<a href ="https://www.iop.org/EJ/journal/IP">
+Inverse Problems</a></cite>,
+vol. 23, no. 4, pp. 1495&ndash;1518, August 2007.
+[<a href="inv1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+
+	
+	[E03]</td> 
+<td align="left">
+	
+T. D. Capricelli and P. L. Combettes, 
+A convex programming algorithm for noisy discrete tomography, in:
+<cite><a href ="https://www.springer.com/west/home/default?SGWID=4-40356-22-52095549-0">
+Advances in Discrete Tomography and Its Applications</a></cite>,
+(G. T. Herman and A. Kuba, Editors), pp. 207&ndash;226.
+Boston, MA: Birkh&auml;user, 2007.
+[<a href="tomo07.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C51]</td> 
+<td align="left">
+	
+C. Chaux, P. L. Combettes, J.-C. Pesquet, and V. R. Wajs,
+Op&eacute;rateurs proximaux pour la restauration bay&eacute;sienne 
+de signaux,
+<cite><a href ="https://www.gretsi2007.org">
+Proceedings of the 21st GRETSI Symposium</a></cite>,
+pp. 1277&ndash;1280. Troyes, France, 11&ndash;14 Septembre 2007.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C50]</td> 
+<td align="left">
+	
+P. L. Combettes and J.-C. Pesquet, 
+Sparse signal recovery by iterative proximal thresholding,
+<cite><a href ="https://www.eusipco2007.org/">
+Proceedings of the 15th European Signal Processing Conference</a></cite>,
+4 pages. Poznan, Poland, September 3&ndash;7, 2007.
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">2006</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J45]</td> 
+<td align="left">
+	
+P. L. Combettes and S. A. Hirstoaga, 
+Approximating curves for nonexpansive and monotone operators,
+<cite><a href ="https://www.heldermann.de/JCA/jcacover.htm">
+Journal of Convex Analysis</a></cite>,
+vol. 13, nos. 3&ndash;4, pp. 633&ndash;646, December 2006.
+[<a href="jca1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J44]</td> 
+<td align="left">
+	
+H. H. Bauschke, P. L. Combettes, and D. Noll,
+Joint minimization with alternating Bregman proximity operators,
+<cite><a href ="https://www.ybook.co.jp/pjo.html">
+Pacific Journal of Optimization</a></cite>,
+vol. 2, no. 3, pp. 401&ndash;424, September 2006.
+[<a href="pjo1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J43]</td> 
+<td align="left">
+	
+H. H. Bauschke, P. L. Combettes, and D. R. Luke,
+A strongly convergent reflection method for finding the projection
+onto the intersection of two closed convex sets in a Hilbert
+space,
+<cite><a href ="https://www.elsevier.com/locate/jat">
+Journal of Approximation Theory</a></cite>,
+vol. 141, no. 1, pp. 63&ndash;69, July 2006.
+[<a href="jat2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J42]</td> 
+<td align="left">
+	
+H. H. Bauschke, P. L. Combettes, and S. G. Kruk, 
+Extrapolation algorithm for affine-convex feasibility problems,
+<cite><a href ="https://www.springer.com/journal/11075">
+Numerical Algorithms</a></cite>,
+vol. 41, no. 3, pp. 239&ndash;274, March 2006.
+[<a href="numeralgo1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C49]</td> 
+<td align="left">
+	
+C. Chaux, P. L. Combettes, J.-C. Pesquet, and V. R. Wajs,
+Iterative image deconvolution using overcomplete representations,
+<cite><a href ="https://www.eusipco2006.org/">
+Proceedings of the 14th European Signal Processing Conference</a></cite>,
+4 pages. Florence, Italy, September 4&ndash;8, 2006.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C48]</td> 
+<td align="left">
+	
+H. H. Bauschke, P. L. Combettes, and J.-C. Pesquet, 
+A decomposition method for nonsmooth convex variational signal 
+recovery,
+<cite><a href ="https://www.icassp2006.com/">
+Proceedings of the IEEE International Conference on Acoustics, Speech,
+and Signal Processing</a></cite>,
+vol. 5, pp. 989&ndash;992. Toulouse, France, May 14&ndash;19, 2006.
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">2005</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J41]</td> <td align="left">
+	
+P. L. Combettes and V. R. Wajs,
+Signal recovery by proximal forward-backward splitting,
+<cite><a href ="https://www.siam.org/journals/mms/mms.htm">
+Multiscale Modeling and Simulation</a></cite>, 
+vol. 4, no. 4, pp. 1168&ndash;1200, November 2005.
+[<a href="mms1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J40]</td> 
+<td align="left">
+	
+P. L. Combettes and S. A. Hirstoaga, 
+Equilibrium programming in Hilbert spaces,
+<cite><a href ="https://www.ybook.co.jp/jnca.html">
+Journal of Nonlinear and Convex Analysis</a></cite>,
+vol. 6, no. 1, pp. 117&ndash;136, April 2005.
+[<a href="jnca1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J39]</td> 
+<td align="left">
+	
+H. H. Bauschke, P. L. Combettes, and S. Reich,
+The asymptotic behavior of the composition of two resolvents,
+<cite><a href ="https://www.sciencedirect.com/science/journal/0362546X">
+Nonlinear Analysis: Theory, Methods, and Applications</a></cite>, 
+vol. 60, no. 2, pp. 283&ndash;301, January 2005.
+[<a href="nonan1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C47]</td> 
+<td align="left">
+	
+C. Chaux, P. L. Combettes, J.-C. Pesquet, and V. R. Wajs,
+A forward-backward algorithm for image restoration with sparse 
+representations,
+<cite><a href ="https://www.irisa.fr/manifestations/2005/SPARS05/">
+Proceedings of the International Conference on Signal Processing 
+with Adaptative Sparse Structured Representations</a></cite>,
+pp. 49&ndash;52. Rennes, France, November 16&ndash;18, 2005.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C46]</td> 
+<td align="left">
+T. D. Capricelli and P. L. Combettes, 
+&Eacute;clatement des contraintes en reconstruction tomographique,
+<cite><a href ="https://www.gretsi2005.org">
+Proceedings of the 20th GRETSI Symposium</a></cite>,
+pp. 655&ndash;658. Louvain-la-Neuve, Belgium, 6&ndash;9 Septembre 2005.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C45]</td> 
+<td align="left">
+	
+T. D. Capricelli and P. L. Combettes, 
+Parallel block-iterative reconstruction algorithms for binary
+tomography,
+<cite><a href ="https://www.sciencedirect.com/science/journal/15710653">
+Electronic Notes in Discrete Mathematics</a></cite>,
+vol. 20, pp. 263&ndash;280, July 2005.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C44]</td> 
+<td align="left">
+	
+H. H. Bauschke, P. L. Combettes, and D. R. Luke,
+A new generation of iterative transform algorithms for phase contrast
+tomography,
+<cite><a href ="https://www.icassp2005.com/">
+Proceedings of the IEEE International Conference on Acoustics, Speech,
+and Signal Processing</a></cite>, vol. 4, pp. 89&ndash;92.
+Philadelphia, PA, March 19&ndash;23, 2005.
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">2004</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J38]</td> 
+<td align="left">
+P. L. Combettes,
+Solving monotone inclusions via compositions of nonexpansive averaged 
+operators,
+<cite><a href ="https://www.tandf.co.uk/journals/titles/02331934.asp">
+Optimization</a></cite>, 
+vol. 53, no. 5&ndash;6, pp. 475&ndash;504, December 2004.
+[<a href="optim1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J37]</td> 
+<td align="left">
+	
+P. L. Combettes and J. C. Pesquet, Wavelet-constrained image restoration,
+<cite><a href ="https://www.worldscinet.com/ijwmip/ijwmip.shtml">
+International Journal of Wavelets, Multiresolution, and Information
+Processing</a></cite>,
+vol. 2, no. 4, pp. 371&ndash;389, December 2004.
+[<a href="ijwmip1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J36]</td> 
+<td align="left">
+	
+P. L. Combettes and T. Pennanen,
+Proximal methods for cohypomonotone operators,
+<cite><a href ="https://www.siam.org/publications/journals/siam-journal-on-control-and-optimization-sicon">
+SIAM Journal on Control and Optimization</a></cite>, 
+vol. 43, no. 2, pp. 731&ndash;742, October 2004.
+[<a href="sicon3.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J35]</td> 
+<td align="left">
+	
+P. L. Combettes and J. C. Pesquet,
+Image restoration subject to a total variation constraint,
+<cite><a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-image-processing">
+IEEE Transactions on Image Processing</a></cite>,  
+vol. 13, no. 9, pp. 1213&ndash;1222, September 2004.
+[<a href="ip4.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J34]</td> 
+<td align="left">
+	
+H. H. Bauschke, P. L. Combettes, and D. R. Luke,
+Finding best approximation pairs relative to two closed convex sets 
+in Hilbert spaces,
+<cite><a href ="https://www.elsevier.com/locate/jat">
+Journal of Approximation Theory</a></cite>,
+vol. 127, no. 2, pp. 178&ndash;192, March 2004.
+[<a href="jat1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C43]</td> 
+<td align="left">
+	
+P. L. Combettes and V. R. Wajs,
+Theoretical analysis of some regularized image denoising methods,
+<cite><a href ="https://www.icip2004.com/">
+Proceedings of the IEEE International Conference on Image 
+Processing</a></cite>, vol. 1, pp. 969&ndash;972. 
+Singapore, October 24&ndash;27, 2004.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C42]</td> 
+<td align="left">
+	
+P. L. Combettes and J. C. Pesquet,
+Estimating first-order finite-difference information in image
+restoration problems,
+<cite><a href ="https://www.icip2004.com/">
+Proceedings of the IEEE International Conference on Image 
+Processing</a></cite>, vol. 1, pp. 321&ndash;324. 
+Singapore, October 24&ndash;27, 2004.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+	
+	[C41]</td> 
+<td align="left">
+	
+P. L. Combettes and J. C. Pesquet,
+Constraint construction in convex set theoretic signal recovery via 
+Stein's principle,
+<cite><a href ="https://www.icassp2004.com/">
+Proceedings of the IEEE International Conference on Acoustics, Speech,
+and Signal Processing</a></cite>, vol. 2, pp. 813&ndash;816.
+Montr&eacute;al, Canada, May 17&ndash;21, 2004.
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">2003</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J33]</td> 
+<td align="left">
+	
+H. H. Bauschke and P. L. Combettes,
+Construction of best Bregman approximations in reflexive Banach spaces,
+<cite><a href ="https://www.ams.org/proc">
+Proceedings of the American Mathematical Society</a></cite>,
+vol. 131, no. 12, pp. 3757&ndash;3766, December 2003.
+[<a href="pams1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J32]</td> 
+<td align="left">
+	
+P. L. Combettes, A block-iterative surrogate constraint splitting
+method for quadratic signal recovery,
+<cite><a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing">
+IEEE Transactions on Signal Processing</a></cite>,
+vol. 51, no. 7, pp. 1771&ndash;1782, July 2003.
+[<a href="sp12.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J31]</td> 
+<td align="left">
+	
+H. H. Bauschke, J. M. Borwein, and P. L. Combettes,
+Bregman monotone optimization algorithms,
+<cite><a href ="https://www.siam.org/publications/journals/siam-journal-on-control-and-optimization-sicon">
+SIAM Journal on Control and Optimization</a></cite>, 
+vol. 42, no. 2, pp. 596&ndash;636, June 2003. 
+[<a href="sicon2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J30]</td> 
+<td align="left">
+	
+H. H. Bauschke, P. L. Combettes, and D. R. Luke,
+Hybrid projection-reflection method for phase retrieval,
+<cite><a href ="https://www.osa.org/pubs/osajournals/josaa/josaahome.cfm">
+Journal of the Optical Society of America A</a></cite>,
+vol. 20, no. 6, pp. 1025&ndash;1034, June 2003.
+[<a href="josa2.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	[J29]</td> 
+<td align="left">
+H. H. Bauschke and P. L. Combettes, Iterating Bregman retractions,
+<cite>
+<cite><a href ="https://www.siam.org/publications/journals/siam-journal-on-optimization-siopt">
+SIAM Journal on Optimization</a></cite>,
+vol. 13, no. 4, pp. 1159&ndash;1173, April 2003.
+[<a href="siopt1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C40]</td> 
+<td align="left">
+	
+P. L. Combettes and J. C. Pesquet,
+Image deconvolution with total variation bounds,
+<cite><a href ="https://www-l2ti.univ-paris13.fr/~isspa2003/index.html">
+Proceedings of the Seventh International Symposium on Signal  
+Processing and Its Applications</a></cite>, vol. 1, pp. 441&ndash;444.
+Paris, France, July 1&ndash;4, 2003. 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C39]</td> 
+<td align="left">
+	
+P. L. Combettes and J. C. Pesquet,
+Incorporating total variation information in image recovery,
+<cite><a href ="https://www.icip2003.org/">
+Proceedings of the IEEE International Conference on Image 
+Processing</a></cite>, vol. 3, pp. 373&ndash;376. 
+Barcelona, Spain, September 14&ndash;17, 2003. 
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">2002</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J28]</td> 
+<td align="left">
+	
+P. L. Combettes and T. Pennanen,
+Generalized Mann iterates for constructing fixed points in Hilbert spaces,
+<cite><a href ="https://www.elsevier.com/wps/find/journaldescription.cws_home/622886/description#description">
+Journal of Mathematical Analysis and Applications</a></cite>,
+vol. 275, no. 2, pp. 521&ndash;536, November 2002.
+[<a href="jmaa1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J27]</td> 
+<td align="left">
+	
+P. L. Combettes and J. Luo,
+An adaptive level set method for nondifferentiable constrained image 
+recovery,
+<cite><a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-image-processing">
+IEEE Transactions on Image Processing</a></cite>,  
+vol. 11, no. 11, pp. 1295&ndash;1304, November 2002.
+[<a href="ip3.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J26]</td> 
+<td align="left">
+	
+H. H. Bauschke, P. L. Combettes, and D. R. Luke,
+Phase retrieval, error reduction algorithm, and Fienup variants: A 
+view from convex optimization,
+<cite><a href ="https://www.osa.org/pubs/osajournals/josaa/josaahome.cfm">
+Journal of the Optical Society of America A</a></cite>,
+vol. 19, no. 7, pp. 1334&ndash;1345, July 2002.
+[<a href="josa1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C38]</td> 
+<td align="left">
+	
+H. H. Bauschke, P. L. Combettes, and D. R. Luke,
+On the structure of some phase retrieval algorithms,
+<cite><a href ="https://www.icip2002.com/">
+Proceedings of the IEEE International Conference on Image 
+Processing</a></cite>,
+vol. 2, pp. 841&ndash;844.
+Rochester, NY, September 22&ndash;25, 2002.
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">2001</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J25]</td> 
+<td align="left">
+	
+H. H. Bauschke, J. M. Borwein, and P. L. Combettes,
+Essential smoothness, essential strict convexity, and
+Legendre functions in Banach spaces,
+<cite><a href ="https://www.worldscinet.com/ccm/ccm.shtml">
+Communications in Contemporary Mathematics</a></cite>, 
+vol. 3, no. 4, pp. 615&ndash;647, 2001.
+[<a href="ccm1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+[J24]</td> 
+<td align="left">
+H. H. Bauschke and P. L. Combettes,
+A weak-to-strong convergence principle for Fej&eacute;r-monotone 
+methods in Hilbert spaces, 
+<cite><a href ="https://pubsonline.informs.org/journal/moor">
+Mathematics of Operations Research</a></cite>,
+vol. 26, no. 2, pp. 248&ndash;264, May 2001.
+[<a href="mor1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+[J23]</td> 
+<td align="left">
+P. L. Combettes, 
+On the numerical robustness of the parallel projection method in 
+signal synthesis, 
+<cite><a href ="https://www.ieee.org/organizations/society/sp/spl.html">
+IEEE Signal Processing Letters</a></cite>, 
+vol. 8, no. 2, pp. 45&ndash;47,
+February 2001.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[E02]</td> 
+<td align="left">
+	
+P. L. Combettes, 
+Quasi-Fej&eacute;rian analysis of some optimization algorithms, in 
+<cite><a href ="https://www.elsevier.com/wps/find/bookdescription.cws_home/622148/description#description">Inherently Parallel Algorithms in Feasibility and Optimization and Their Applications</a></cite>,
+(D. Butnariu, Y. Censor, and S. Reich, Eds.), pp. 115&ndash;152. 
+New York: Elsevier, 2001.
+[<a href="ipa.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[E01]</td> 
+<td align="left">
+	
+P. L. Combettes, Fej&eacute;r-monotonicity in convex optimization, in
+<cite><a href ="https://www.springer.com/mathematics/book/978-0-387-74758-3">Encyclopedia of Optimization</a></cite>
+(C. A. Floudas and P. M. Pardalos, Eds.),
+vol. 2, pp. 106&ndash;114. 
+Springer-Verlag, New York, 2001.
+[<a href="eoo.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C37]</td> 
+<td align="left">
+	
+P. L. Combettes, 
+Convex set theoretic image recovery with inexact projection algorithms, 
+<cite><a href ="https://icip01.ics.forth.gr/">
+Proceedings of the IEEE International Conference on Image 
+Processing</a></cite>,
+vol. 1, pp. 257&ndash;260.  
+Thessaloniki, Greece, October 7&ndash;10, 2001.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C36]</td> 
+<td align="left">
+	
+P. L. Combettes, Convexit&eacute; et signal,
+<cite><a href ="https://www.ema.utc.fr/~smai2001">
+Actes du Congr&egrave;s de Math&eacute;matiques Appliqu&eacute;es 
+et Industrielles SMAI'01</a></cite>, pp. 6&ndash;16. Pompadour, France, 
+May 28-June 1, 2001.
+[<a href="smai2001.pdf">pdf</a>] 
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">2000</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J22]</td> 
+<td align="left">
+	
+	
+P. L. Combettes, Strong convergence of block-iterative outer approximation
+methods for convex optimization,
+<i>
+<cite><a href ="https://www.siam.org/publications/journals/siam-journal-on-control-and-optimization-sicon">
+SIAM Journal on Control and Optimization</a>
+</i>, vol. 38, no. 2, pp. 538&ndash;565</a>, February 2000.
+[<a href="sicon1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C35]</td> 
+<td align="left">
+	
+P. L. Combettes, 
+A parallel constraint disintegration and approximation
+scheme for quadratic signal recovery,
+<cite><a href ="https://icassp2000.sdsu.edu">
+Proceedings of the IEEE International Conference on Acoustics, Speech,
+and Signal Processing</a></cite>, vol. 1, pp. 165&ndash;168.
+Istanbul, Turkey, June 5&ndash;9, 2000.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C34]</td> 
+<td align="left">
+	
+J. Luo and P. L. Combettes, A level-set subgradient projection algorithm 
+for non-differentiable signal restoration with multiple constraints,
+<cite><a href ="https://icassp2000.sdsu.edu"> 
+Proceedings of the IEEE International Conference on Acoustics, Speech,
+and Signal Processing</a></cite>, vol. 1, pp. 225&ndash;228.
+Istanbul, Turkey, June 5&ndash;9, 2000.
+</td></tr></table>
+
+
+<center><h3><FONT COLOR="#CC0000">1999</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J21]</td> 
+<td align="left">
+	
+P. L. Combettes and P. Bondon, Hard-constrained inconsistent signal
+feasibility problems,
+<cite><a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing">
+IEEE Transactions on Signal Processing</a></cite>,
+vol. 47, no. 9, pp. 2460&ndash;2468, September 1999. 
+[<a href="sp11.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C33]</td> 
+<td align="left">
+	
+J. Luo and P. L. Combettes, A subgradient projection algorithm for
+nondifferentiable signal recovery,
+<i> Proceedings of the IEEE Workshop on Nonlinear Signal and Image
+Processing,</i> 
+pp. 452&ndash;456. Antalya, Turkey, June 20&ndash;23, 1999. 
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">1998</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J20]</td> 
+<td align="left">
+	
+P. L. Combettes and J. C. Pesquet,
+Convex multiresolution analysis,
+<i>
+<a href ="https://computer.org/tpami/tp1998/iztoc.htm">
+IEEE Transactions on Pattern Analysis and Machine Intelligence</a></i>,   
+vol. 20, no. 12, pp. 1308&ndash;1318, December 1998. 
+<a href="pami.ps.gz">Gzipped PostScript</a> 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+	[C32]</td> 
+<td align="left">
+P. L. Combettes and J. C. Pesquet, 
+Nonlinear multiresolution image analysis via convex projections, 
+<i> Proceedings of the IEEE International Conference on Image
+Processing,</i>
+vol. 2, pp. 762&ndash;765. Chicago, IL, October 4&ndash;7, 1998.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+	[C31]</td> 
+<td align="left">
+P. L. Combettes and P. Bondon, Constrained pulse shape synthesis for
+digital communications, 
+<i> Proceedings of the European Signal Processing Conference,</i> 
+pp. 573&ndash;576. Island of Rhodes, Greece, September 8&ndash;11, 1998. 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C30]</td> 
+<td align="left">
+	
+P. L. Combettes, A block-iterative quadratic signal recovery algorithm,
+<i> Proceedings of the IEEE International Conference on Acoustics, Speech,
+and Signal Processing,</i> vol. 5, pp. 2917&ndash;2920.
+Seattle, WA, May 12&ndash;15, 1998. 
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">1997</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J19]</td> 
+<td align="left">
+	
+P. L. Combettes,
+Hilbertian convex feasibility problem: Convergence of projection 
+methods, 
+<i>
+<a href ="https://link.springer.de/link/service/journals/00245/index.html"> 
+Applied Mathematics and Optimization</a></i>,
+vol. 35, no. 3, pp. 311&ndash;330, May 1997.  
+[<a href="amo.pdf">pdf</a>]
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J18]</td> 
+<td align="left">
+	
+P. L. Combettes,  
+Convex set theoretic image recovery by extrapolated iterations of 
+parallel subgradient projections,
+<i>
+<a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-image-processing">
+IEEE Transactions on Image Processing</a></i>,  
+vol. 6, no. 4, pp. 493&ndash;506, April 1997. 
+[<a href="ip2.pdf">pdf</a>]
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C29]</td> 
+<td align="left">
+	
+P. L. Combettes and P. Bondon, Hard-constrained signal feasibility
+problems,
+<i> Proceedings of the IEEE International Conference on Acoustics, Speech,
+and Signal Processing,</i>
+vol. 4, pp. 2569&ndash;2572. Munich, Germany, April 21&ndash;24, 1997.
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">1996</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J17]</td> 
+<td align="left">
+	
+P. L. Combettes and T. J. Chaussalet,
+Combining statistical information in set theoretic estimation,
+<cite><a href ="https://www.ieee.org/organizations/society/sp/spl.html">
+IEEE Signal Processing Letters</a></cite>,
+vol. 3, no. 3, pp. 61&ndash;62, March 1996. 
+[<a href="spl2.ps.gz">Gzipped PostScript</a>]
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J16]</td> 
+<td align="left">
+	
+J. C. Pesquet and P. L. Combettes,
+Wavelet synthesis by alternating projections,
+<cite><a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing">
+IEEE Transactions on Signal Processing</a></cite>,
+vol. 44, no. 3, pp. 728&ndash;732, March 1996. 
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[B01]</td> 
+<td align="left">
+	
+P. L. Combettes, 
+<i>
+The Convex Feasibility Problem in Image Recovery,
+</i>
+vol. 95 of 
+<i>
+<a href ="https://www.elsevier.com/wps/find/bookseriesdescription.cws_home/BS_0145/description">
+Advances in Imaging and Electron Physics</a></i>, 
+Academic Press, New York, 1996.
+</FONT>
+<FONT COLOR="#660099">
+[<a href="aiep.pdf">pdf</a>] 
+</FONT>
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C28]</td> 
+<td align="left">
+	
+P. L. Combettes, Generalized convex set theoretic image recovery,
+<i> Proceedings of the IEEE International Conference on Image Processing,</i>
+vol. 2, pp. 453&ndash;456. Lausanne, Switzerland, September 16&ndash;19, 1996.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C27]</td> 
+<td align="left">
+	
+P. L. Combettes, Bounded-error models in inverse problems, 
+<i> Proceedings of the 1996 IMACS/IEEE MultiConference on Computational
+Engineering in Systems Applications,</i> vol. 2, pp. 1023&ndash;1027.
+Lille, France, July 9&ndash;12, 1996.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C26]</td> 
+<td align="left">
+	
+P. L. Combettes and J. C. Pesquet, Convex multiresolution analysis,
+<i> Proceedings of the IEEE International Symposium on
+Time-Frequency and Time-Scale Analysis,</i> pp. 301&ndash;304.
+Paris, France, June 18&ndash;21, 1996.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C25]</td> 
+<td align="left">
+	
+H. Puh and P. L. Combettes, Operator theoretic image coding,
+<i> Proceedings of the IEEE International Conference on Acoustics, Speech, 
+and Signal Processing,</i>
+vol. 4, pp. 1863&ndash;1866. Atlanta, GA, May 7&ndash;10, 1996.
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C24]</td> 
+<td align="left">
+	
+H. Puh and P. L. Combettes, Set theoretic vector quantization,
+<i> Proceedings of the Ninth IEEE Workshop on Image and Multidimensional 
+Signal Processing,</i> 
+pp. 48&ndash;49. Belize City, Belize, March 3&ndash;6, 1996.
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">1995</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J15]</td> 
+<td align="left">
+	
+P. Bondon, P. L. Combettes, and B. Picinbono, 
+Volterra filtering and higher order whiteness,
+<cite><a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing">
+IEEE Transactions on Signal Processing</a></cite>,
+vol. 43, no. 9, pp. 2209&ndash;2212, September 1995. 
+[<a href="sp9.ps.gz">Gzipped PostScript</a>]
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J14]</td> 
+<td align="left">
+	
+P. L. Combettes,
+Construction d'un point fixe commun &agrave une famille de
+contractions fermes,
+<i>
+<a href ="https://www.academie-sciences.fr/publications/comptes_rendus/CR_mathematique.htm">
+Comptes Rendus de l'Acad&eacute;mie des Sciences de
+Paris, S&eacute;rie I (Math&eacute;matique)</a>
+</i>,
+vol. 320, no. 11, pp. 1385&ndash;1390, June 1995.
+[<a href="cras1.pdf">pdf</a>]
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J13]</td> 
+<td align="left">
+	
+P. L. Combettes and H. J. Trussell,  
+Deconvolution with bounded uncertainty, 
+<i>
+<a href ="https://www3.interscience.wiley.com/cgi-bin/jhome/4508">
+International Journal of Adaptive Control and Signal Processing</a></i>,
+vol. 9, no. 1, pp. 3&ndash;17, January 1995.
+[<a href="ijacsp.pdf">pdf</a>]
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C23]</td> 
+<td align="left">
+	
+P. L. Combettes, Constrained image recovery in a product space,
+<i> Proceedings of the IEEE International Conference on Image Processing,</i>
+vol. 2, pp. 25&ndash;28. Washington, DC, October 23&ndash;26, 1995.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+
+	
+	[C22]</td> 
+<td align="left">
+	
+P. L. Combettes, 
+Restauration ensembliste d'images par it&eacute;rations
+parall&egrave;les extrapol&eacute;es de sous-gradients,
+<i> Proceedings of the 15th GRETSI Symposium,</i> 
+pp. 447&ndash;450. Juan-les-Pins, France, September 18&ndash;22, 1995.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C21]</td> 
+<td align="left">
+	
+P. L. Combettes and P. Bondon, Adaptive linear filtering with convex
+constraints,
+<i> Proceedings of the IEEE International Conference on Acoustics,
+Speech, and Signal Processing,</i>
+vol. 2, pp. 1372&ndash;1375. Detroit, MI, May 8&ndash;12, 1995.
+</td></tr></table>
+
+
+<center><h3><FONT COLOR="#CC0000">1994</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J12]</td> 
+<td align="left">
+	
+P. L. Combettes,  
+Inconsistent signal feasibility problems: Least-squares solutions in 
+a product space, 
+<cite><a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing">
+IEEE Transactions on Signal Processing</a></cite>,
+vol. 42, no. 11, pp. 2955&ndash;2966, November 1994.
+[<a href="sp7.pdf">pdf</a>]
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J11]</td> 
+<td align="left">
+	
+P. L. Combettes and H. Puh,  
+Iterations of parallel convex projections in Hilbert spaces,
+<cite><a href ="https://www.tandfonline.com/toc/lnfa20/current">
+Numerical Functional Analysis and Optimization</a></i>,
+vol. 15, nos. 3&ndash;4, pp. 225&ndash;243, 1994.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C20]</td> 
+<td align="left">
+	
+P. L. Combettes, 
+Convex set theoretic image recovery via chaotic iterations 
+of approximate projections,
+<i> Proceedings of the IEEE International Conference on Image Processing,</i>
+vol. 3, pp. 182&ndash;186. Austin, TX, November 13&ndash;16, 1994.
+</td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C19]</td> 
+<td align="left">
+	
+P. L. Combettes and T. J. Chaussalet, Selecting statistical information
+in set theoretic signal processing, 
+<i> Proceedings of the Seventh IEEE Workshop on Statistical Signal and
+Array Processing, </i>
+pp. 55&ndash;58. Qu&eacute;bec City, Canada, June 26&ndash;29, 1994.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C18]</td> 
+<td align="left">
+	
+P. L. Combettes, Set theoretic signal processing, 
+<i> Proceedings of the Seventh IEEE Workshop on Statistical Signal and
+Array Processing, </i>
+pp. 1&ndash;6. Qu&eacute;bec City, Canada, June 26&ndash;29, 1994.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C17]</td> 
+<td align="left">
+	
+P. L. Combettes and H. Puh, A fast parallel projection algorithm for 
+set theoretic image recovery, 
+<i> Proceedings of the IEEE International Conference on Acoustics, Speech, 
+and Signal Processing,</i>
+vol. 5, pp. 473&ndash;476. Adelaide, Australia, April 19&ndash;22, 1994.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C16]</td> 
+<td align="left">
+	
+J. C. Pesquet and P. L. Combettes, 
+Synth&egrave;se ensembliste d'ondelettes,
+<i> Proceedings of the Conference on Time-Frequency, Wavelets, and
+Multiresolution,</i> pp. 14.1&ndash;14.10.
+Lyon, France, March 9&ndash;11, 1994.      
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">1993</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J10]</td> 
+<td align="left">
+	
+P. L. Combettes,  Signal recovery by best feasible approximation,
+<i>
+<a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-image-processing">
+IEEE Transactions on Image Processing</a></i>,
+vol. 2, no. 2, pp. 269&ndash;271, April 1993.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J09]</td> 
+<td align="left">
+	
+P. L. Combettes,  The foundations of set theoretic estimation,
+<i> 
+<a href ="https://www.ieee.org/organizations/pubs/proceedings/">
+Proceedings of the IEEE</a></i>,  
+vol. 81, no. 2, pp. 182&ndash;208, February 1993.
+[<a href="proc.pdf">pdf</a>]
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C15]</td> 
+<td align="left">
+P. L. Combettes and T. J. Chaussalet, 
+Estimation en pr&eacute;sence de mod&egrave;les incertains: 
+S&eacute;lection de formulations ensemblistes,
+<i> Proceedings of the 14th GRETSI Symposium,</i> 
+pp. 205&ndash;208. Juan-les-Pins, France, September 
+13&ndash;16, 1993.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C14]</td> 
+<td align="left">
+	
+P. L. Combettes, A simultaneous projection method for inconsistent signal 
+and image feasibility problems,
+<i> Proceedings of the Eighth IEEE Workshop on Image and Multidimensional 
+Signal Processing,</i> 
+pp. 32&ndash;33. Cannes, France, September 8&ndash;10, 1993.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C13]</td> 
+<td align="left">
+	
+P. L. Combettes and H. Puh, Parallel projection methods for set theoretic 
+signal reconstruction and restoration, 
+<i> Proceedings of the IEEE International Conference on Acoustics, Speech, 
+and Signal Processing,</i>
+vol. 5, pp. 297&ndash;300. Minneapolis, MN, April 27&ndash;30, 1993.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C12]</td> 
+<td align="left">
+	
+P. Bondon, P. L. Combettes, and B. Picinbono,  Volterra prediction models 
+and higher order whiteness, 
+<i> Proceedings of the IEEE International Conference on Acoustics, Speech, 
+and Signal Processing,</i>
+vol. 4, pp. 212&ndash;215. Minneapolis, MN, April 27&ndash;30, 1993.
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">1992</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J08]</td> 
+<td align="left">
+	
+P. L. Combettes,  Convex set theoretic image recovery: History, 
+current status, and new directions, 
+<i> 
+<a href ="https://www.academicpress.com/jvcir">
+Journal of Visual Communication and Image Representation</a></i>,
+vol. 3, no. 4, pp. 307&ndash;315, December 1992.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J07]</td> 
+<td align="left">
+	
+P. L. Combettes and H. J. Trussell,  Best stable
+and invertible approximations for ARMA systems, 
+<cite><a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing">
+IEEE Transactions on Signal Processing</a></cite>,
+vol. 40, no. 12, pp. 3066&ndash;3069, December 1992.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J06]</td> 
+<td align="left">
+	
+J. W. Silverstein and P. L. Combettes,  
+Signal detection via spectral theory of large dimensional random 
+matrices,
+<cite><a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing">
+IEEE Transactions on Signal Processing</a></cite>,
+vol. 40, no. 8, pp. 2100&ndash;2105, August 1992.
+[<a href="sp5-2022.pdf">pdf of long version</a>]
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J05]</td> 
+<td align="left">
+	
+M. S. Zilovic, L. M. Roytman, P. L. Combettes, and M. N. S. Swamy,  
+A bound for the zeros of polynomials, 
+<cite><a href="https://www.ieee.org/portal/index.jsp?pageID=corp_level1&path=pubs/transactions&file=tcs1.xml&xsl=generic.xsl">
+IEEE Transactions on Circuits and Systems I</a></cite>, 
+vol. 39, no. 6, pp. 476&ndash;478, June 1992.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C11]</td> 
+<td align="left">
+	
+J. W. Silverstein and P. L. Combettes, Large dimensional random matrix 
+theory for signal detection and estimation in array processing,
+<i> Proceedings of the Sixth IEEE Workshop on Statistical Signal and
+Array Processing, </i>
+pp. 276&ndash;279. Victoria, BC, Canada, October 7&ndash;9, 1992.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C10]</td> 
+<td align="left">
+	
+P. L. Combettes and W. W. Edmonson,  What is a good estimate?,
+<i> Proceedings of the European Signal Processing Conference,</i>
+pp. 713&ndash;716. Brussels, Belgium, August 24&ndash;27, 1992.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C09]</td> 
+<td align="left">
+	
+P. L. Combettes, M. Benidir, and B. Picinbono,  A general framework for the
+incorporation of uncertainty in set theoretic estimation,
+<i> Proceedings of the IEEE International Conference on Acoustics, Speech, 
+and Signal Processing,</i>
+vol. 3, pp. 349&ndash;352. San Francisco, CA, March 23&ndash;26, 1992.
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">1991</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J04]</td> 
+<td align="left">
+	
+P. L. Combettes and H. J. Trussell,  
+Set theoretic estimation by random search,
+<cite><a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing">
+IEEE Transactions on Signal Processing</a></cite>,
+vol. 39, no. 7, pp. 1669&ndash;1671, July 1991.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J03]</td> 
+<td align="left">
+	
+P. L. Combettes and H. J. Trussell,  The use of noise
+properties in set theoretic estimation, 
+<cite><a href ="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing">
+IEEE Transactions on Signal Processing</a></cite>,
+vol. 39, no. 7, pp. 1630&ndash;1641, July 1991.
+[<a href="sp3.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C08]</td> 
+<td align="left">
+	
+P. L. Combettes and T. J. Chaussalet, Crit&egrave;res de qualit&eacute; en
+estimation ensembliste,
+<i>Proceedings of the 13th GRETSI Symposium,</i> 
+pp. 249&ndash;252. Juan-les-Pins, France, September 16&ndash;20, 1991. 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C07]</td> 
+<td align="left">
+	
+P. L. Combettes and M. R. Civanlar, The foundations of set theoretic
+estimation, 
+<i> Proceedings of the IEEE International Conference on Acoustics, Speech, 
+and Signal Processing,</i>
+pp. 2921&ndash;2924. Toronto, Canada, May 14&ndash;17, 1991.
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">1990</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J02]</td> 
+<td align="left">
+	
+P. L. Combettes and H. J. Trussell,  
+Method of successive projections for finding a common point of sets 
+in metric spaces, 
+<cite><a href ="https://link.springer.com/journal/10957">
+Journal of Optimization Theory and Applications</a></cite>,
+vol. 67, no. 3, pp. 487&ndash;507, December 1990.
+[<a href="jota1.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C06]</td> 
+<td align="left">
+	
+P. L. Combettes and H. J. Trussell, Set theoretic 
+autoregressive spectral estimation, 
+<i> Proceedings of the Fifth IEEE ASSP Workshop on Spectrum Estimation and 
+Modeling,</i>
+pp. 261&ndash;264. Rochester, NY, October 10&ndash;12, 1990.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C05]</td> 
+<td align="left">
+	
+P. L. Combettes and H. J. Trussell, New methods for the 
+synthesis of set theoretic estimates, 
+<i> Proceedings of the IEEE International Conference on Acoustics, Speech, 
+and Signal Processing,</i>
+pp. 2531&ndash;2534. Albuquerque, NM, April 3&ndash;6, 1990. 
+</td></tr></table>
+
+<center><h3><FONT COLOR="#CC0000">1989</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[J01]</td> 
+<td align="left">
+	
+P. L. Combettes and H. J. Trussell,  
+Methods for digital restoration of signals degraded by a stochastic 
+impulse response,
+<cite><a href ="https://www.ieee.org/organizations/society/sp/tsp.html">
+IEEE Transactions on Acoustics, Speech, and Signal 
+Processing</a></cite>,
+vol. 37, no. 3, pp. 393&ndash;401, March 1989.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top"><td align="left" width="63" style="color:#CC0000">
+	[C04]</td> 
+<td align="left">
+P. L. Combettes and H. J. Trussell, 
+General order moments in set theoretic estimation,
+<i> Proceedings of the IEEE International Conference on Acoustics,
+Speech, and Signal Processing,</i>
+pp. 2531&ndash;2534. Glasgow, Scotland, May 23&ndash;26, 1989.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top"><td align="left" width="63" style="color:#CC0000">
+	[TR02]</td> 
+<td align="left">
+P. L. Combettes, A new inequality in abstract L<sup>p</sup>
+spaces, 
+Center for Communications and Signal Processing,
+North Carolina State University, 1989.
+[<a href="tr1989.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<center><h3><FONT COLOR="#CC0000">1988</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+	[C03]</td> 
+<td align="left">
+P. L. Combettes and H. J. Trussell, Stability of the
+linear prediction filter: A set theoretic approach,
+<i> Proceedings of the IEEE International Conference on Acoustics,
+Speech, and Signal Processing,</i>
+pp. 2288&ndash;2291. New York, NY, April 11&ndash;14, 1988.
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[TR01]</td> 
+<td align="left">
+P. L. Combettes, The mathematical foundations of projection
+techniques and their applications to set theoretic estimation.
+Technical report, Center for Communications and Signal Processing,
+North Carolina State University, 1988.
+[<a href="tr1988.pdf">pdf</a>] 
+</td></tr></table>
+
+
+<center><h3><FONT COLOR="#CC0000">1987</FONT></h3></center>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+
+	
+	[C02]</td> 
+<td align="left">
+	
+P. L. Combettes and H. J. Trussell, Mod&egrave;les et 
+algorithmes en vue de la restauration num&eacute;rique d'images rayons-X,  
+<i> Proceedings of MARI-Cognitiva Electronic Image, </i>
+pp. 146&ndash;151. Paris, France, May 18&ndash;22, 1987.
+[<a href="paris87.pdf">pdf</a>] 
+</td></tr></table>
+
+<table border="0" cellspacing="0" cellpadding="5">
+<tr valign="top">
+	<td align="left" width="63" style="color:#CC0000">
+ 
+	[C01]</td> 
+<td align="left">
+	
+H. J. Trussell and P. L. Combettes, Considerations for the 
+restoration of stochastic degradations, 
+<i> Proceedings of the IEEE International Conference on Acoustics,
+Speech, and Signal Processing,</i>
+pp. 1209&ndash;1212. Dallas, TX, April 6&ndash;9, 1987.
+</td></tr></table>
+
+</div>
+
+<div id="Citations" class="tabContent">
+    <h2>Citations</h2>
+
+    <ul>
+    <li><a href="https://mathcitations.github.io/">Most cited mathematician</a></li>
+    <li><a href="https://mathscinet.ams.org/mathscinet/MRAuthorID/304707">MathSciNet</a></li>
+    <li><a href="https://www.webofscience.com/wos/author/record/1143333">Publons</a></li>
+    <li><a href="https://www.researchgate.net/profile/Patrick_Combettes">ResearchGate</a></li>
+    <li><a
+href="https://www.semanticscholar.org/author/P.-L.-Combettes/1783400">Semantic Scholar</a></li>
+    </ul>
+</div>
+
+<div id="Talks" class="tabContent">
+    <h2>Recent conference talks</h2>
+
+<ul><li>Stochastic block-iterative splitting of systems of monotone inclusions,
+<em><a href="https://www.math.ntnu.edu.tw/workshop/icoml2026/">
+International Conference on Optimization and Machine Learning</a></em>.
+Taipei, Taiwan, July 27&ndash;29, 2026.
+</li></ul>
+
+<ul><li>Sharpening some classical inequalities in nonlinear analysis,
+<em><a href="https://www.icisequynhon.com/conferences/2026/workshop/">Workshop
+on Optimization and Decision Theory</a></em>.
+ICISE, Quy Nh&oacute;n, Vietnam, July 17, 2026.
+</li></ul>
+
+<ul><li>Deterministic and stochastic projective splitting methods,
+<em><a href="https://www.siam.org/conferences-events/siam-conferences/op26/">SIAM Optimization Conference</a></em>.
+Edinburgh, Scotland, June 2&ndash;5, 2026.
+</li></ul>
+
+<ul><li>How small is the Haraux function?,
+<em><a href="https://sites.google.com/view/laciam-2026/home">2nd
+Latin American Congress on Industrial and Applied Mathematics</a></em>.
+Valpara&iacute;so, Chile, January 19&ndash;23, 2026.
+</li></ul>
+
+<ul><li>A stochastic iteration framework,
+<em><a href="http://isora2025.imca.edu.pe/index.php">16th International Seminar on Optimization and Related Areas</a></em>.
+Cusco, Peru, October 6&ndash;10, 2025.
+</li></ul>
+
+<ul><li>Stochastic block-iterative parallel subgradient projections
+method with super relaxations,
+<em><a href ="http://www.eusipco2025.org/">
+European Signal Processing Conference</a></em>.
+Palermo, Italy, Sept. 8&ndash;12, 2025.</li></ul>
+
+    <ul><li>Stochastic quasi-Fej&eacute;r iterations and 
+applications,
+<em><a href ="https://cermics-lab.enpc.fr/icsp2025/">
+XVIIth Conference on Stochastic Programming</a></em>.
+&Eacute;cole des Ponts, France, 
+July 28&ndash;August 1, 2025.</li></ul>
+    
+    <ul><li>Stochastic Krasnosel'skiĭ--Mann iterations,
+<em><a href ="https://jfco25.sciencesconf.org/">
+Tenth French-Chilean Optimization Conference</a></em>.
+Rouen, France, July 8&ndash;11, 2025.</li></ul>
+    
+<ul><li>Integral proximal mixtures,
+<em><a href="https://eventos.cmm.uchile.cl/lopezcerda2025/">4th International Conference on Variational Analysis and Optimization</a></em>.
+Santiago, Chile, January 14&ndash;17, 2025.
+</li></ul>
+
+<ul><li>Randomly activated proximal methods for nonsmooth convex 
+minimization,
+<em><a href="http://www.eusipco2024.org/">
+European Signal Processing Conference</a></em>.
+Lyon, France, August 26&ndash;30, 2024.
+</li></ul>
+
+<ul><li>Signal recovery with proximal comixtures,
+<em><a href="http://www.eusipco2024.org/">
+European Signal Processing Conference</a></em>.
+Lyon, France, August 26&ndash;30, 2024.
+</li></ul>
+
+<ul><li>Proximal expectations,
+<em><a href="https://www.ecm2024sevilla.com/">
+9th European Congress of Mathematics</a></em>.
+Seville, Spain, July 15&ndash;19, 2024.
+</li></ul>
+
+<ul><li>The geometry of monotone operator splitting,
+<em><a href="https://www.esi.ac.at/events/e539/">
+One World Optimization Workshop</a></em>.
+Vienna, Austria, June 3&ndash;7, 2024.
+</li></ul>
+
+<ul><li>Arbitrary products of monotone operators,
+<em><a href="https://eventos.cmm.uchile.cl/mordukhovich2024/">3rd International Conference on Variational Analysis and Optimization</a></em>.
+Santiago, Chile, January 16&ndash;19, 2024.
+</li></ul>
+
+<ul><li>Solving monotone inclusions involving nonlinear compositions,
+<em><a href="http://isora2023.imca.edu.pe/index.php">15th International Seminar on Optimization and Related Areas</a></em>.
+Arequipa, Peru, October 2&ndash;6, 2023.
+</li></ul>
+
+<ul><li>A perturbation framework for convex minimization with 
+nonlinear compositions,
+<em><a href="https://iciam2023.org/">10th International Congress on
+Industrial and Applied Mathematics</a></em>.
+Tokyo, Japan, August 20&ndash;25, 2023.
+</li></ul>
+
+<ul><li>Proximal compositions and cocompositions,
+<em><a href="https://jourani.perso.math.cnrs.fr/Colloque_Thibault/index.html">Conference on Nonsmooth and Variational Analysis</a></em>.
+Dijon, France, June 26&ndash;28, 2023.
+</li></ul>
+
+<ul><li>A variational inequality model for learning neural 
+networks,
+<em><a href="https://2023.ieeeicassp.org/">
+IEEE International Conference on Acoustics, 
+Speech, and Signal Processing</a></em>. 
+Rhodes Island, Greece, June 4&ndash;10, 2023.
+</li></ul>
+
+<ul><li>Resolvent and proximal compositions,
+<em><a href="https://sites.google.com/view/rc-fest/roberto-cominettis-fest">Workshop on Optimization, Learning, and Games</a></em>.
+Vi&ntilde;a del Mar, Chile, January 8&ndash;11, 2023.</li></ul>
+
+<ul><li>A monotone operator approach to convex Nash equilibria,
+<em><a href="https://euro2022espoo.com/">
+European Association of Operational Research Societies 
+Conference</a></em>.
+Espoo, Finland, July 3&ndash;6, 2022.</li></ul>
+
+<ul><li>Block-activated algorithms for multicomponent fully
+nonsmooth minimization,
+<em><a href="https://2022.ieeeicassp.org/">
+IEEE International Conference on Acoustics, Speech, and Signal 
+Processing</a></em>.
+Singapore, May 22&ndash;27, 2022.</li></ul>
+
+<ul><li>Signal recovery from inconsistent nonlinear observations,
+<em><a href="https://2022.ieeeicassp.org/">
+IEEE International Conference on Acoustics, Speech, and Signal 
+Processing</a></em>.
+Singapore, May 22&ndash;27, 2022.</li></ul>
+
+<ul><li>Image recovery from perturbed nonlinear observations,
+<em><a href="https://www.siam.org/conferences/cm/conference/is22">
+SIAM Conference on Imaging Science</a></em>.
+Berlin, Germany, March 21&ndash;25, 2022.</li></ul>
+
+<ul><li>Warped resolvent iterations, 
+<em><a href="https://cms-math.net.technion.ac.il/a-workshop-on-optimization-and-operator-theory/">Workshop on Optimization and Operator Theory dedicated to Professor Lev Bregman</a></em>.
+Haifa, Israel, November 15&ndash;17, 2021.</li></ul>
+    
+<ul><li>Signal recovery and synthesis from nonlinear equations 
+models, <em><a href="https://award-con.com/sips2021/">Signal Processing Symposium 2021</a></em>.
+Tokyo, Japan, November 9&ndash;12, 2021.</li></ul>
+    
+<ul><li>Solving composite fixed point problems with block updates, <em><a
+href="https://modemat.epn.edu.ec/ifip_tc7_2021/">IFIP
+Conference on System Modelling and Optimization</a></em>.
+Quito, Ecuador, August 30&ndash;September 3, 2021.</li></ul>
+    
+<ul><li>Solving composite fixed point problems with 
+block updates,
+<em><a href="https://www.siam.org/conferences/cm/conference/op21">SIAM
+Conference on Optimization</a></em>.
+Spokane, USA, July 20&ndash;23, 2021.</li></ul>
+    
+<ul><li>Multivariate monotone inclusions in saddle form,
+<em><a href="https://europt2021.recherche.enac.fr/">18th Workshop 
+on Advances in Continuous Optimization (EUROPT)</a></em>.
+Toulouse, France, July 7&ndash;9, 2021.</li></ul>
+    
+<ul><li>Reconstruction of functions from prescribed proximal 
+points,
+<em><a href
+="program-noli2021.pdf">Mathematical Symposium in Memory of Professor Noli Reyes</a></em>.
+Quezon City, Philippines, June 5, 2021.</li></ul>
+    
+<ul><li>Proximal analysis of deep neural networks,
+<em><a href ="https://www2.cms.math.ca/Events/winter20/sessions_scientific#vat">
+2020 Winter Meeting of the Canadian Mathematical Society</a></em>.
+Montr&eacute;al, Canada, December 3&ndash;8, 2020.</li></ul>
+    
+<ul><li>Back to single-resolvent iterations, with warping,
+<em><a href ="https://owos.univie.ac.at/">
+One World Optimization Seminar</a></em>.
+Earth, Universe, May 25, 2020.
+[<a href="oneworldopti2020.pdf">slides</a>]
+[<a href="https://stream.univie.ac.at/media/mathematik/owos/Patrick_L_Combettes-OWOS_Talk?res=640">video</a>]
+</li>
+</ul>
+
+    <ul><li>Variational and proximal analysis of neural networks,
+<em><a href ="http://eventos.cmm.uchile.cl/optva2020/">
+Workshop on Optimization and Variational 
+Analysis, in honor of Terry Rockafellar&#39;s 85th birthday</a></em>.
+Santiago, Chile, January 20&ndash;21, 2020.</li></ul>
+    
+    <ul><li>The warped proximal point algorithm,
+<em><a href ="http://isora2019.imca.edu.pe/">
+International Seminar on Optimization and Related Areas</a></em>.
+Lima, Peru, October 7&ndash;11, 2019.</li></ul>
+    
+    <ul><li>Fully proximal splitting algorithms in image recovery,
+<em><a href ="http://www.eusipco2019.org/">
+European Signal Processing Conference</a></em>.
+A Coru&ntilde;a, Spain, September 2&ndash;6, 2019.</li></ul>
+    
+    <ul><li>Bregman-based forward-backward splitting for monotone inclusions,
+<em><a href="https://iccopt2019.berlin/">International Conference
+on Continuous Optimization</a></em>. 
+Berlin, Germany, August 5&ndash;8, 2019.</li></ul>
+    
+    <ul><li>The pervasiveness of proximal point iterations &ndash; with a proximal analysis of neural networks,
+<em><a href="https://sites.google.com/site/bayopt2019/">Fifth Bay 
+Optimization Meeting</a></em>. 
+Santa Cruz, CA, May 17, 2019.</li></ul>
+    
+    <ul><li>Between subdifferentials and monotone operators,
+<em><a href="https://www.esi.ac.at/activities/events/2019/modern-maximal-monotone-operator-theory">Modern Maximal Monotone Operator Theory: From Nonsmooth Optimization to Differential Inclusions</a></em>. 
+Vienna, Austria, February 25-March 1, 2019.</li></ul>
+    
+    <ul><li>Perspective maximum likelihood-type estimation via proximal decomposition,
+<em><a href="http://eventos.cmm.uchile.cl/analisisvariacional2019/actividades/">Mes Tem&aacute;tico en An&aacute;lisis Variacional y Teor&iacute;a de Juegos</a></em>. 
+Santiago, Chile, January 9, 2019.</li></ul>
+    
+    <ul><li>Purely implicit first order splitting methods,
+<em><a
+href="http://varana.org/2018/international-workshop/">69th Workshop
+on Variational Analysis and Applications</a></em>. 
+Erice, Italy, Aug. 28&ndash;Sept. 5, 2018.</li></ul>
+    
+    <ul><li>Proximal activation of smooth functions in splitting algorithms for convex minimization,
+<em><a href="http://www.math.science.cmu.ac.th/acfpto2018/index.html">10th
+Asian Conference on Fixed Point Theory and Optimization</a></em>. 
+Chiang Mai, Thailand, July 16&ndash;18, 2018.</li></ul>
+    
+    <ul><li>Monotone operator theory in convex optimization,
+<em><a
+href="https://ismp2018.sciencesconf.org">International Symposium on Mathematical Programmming</a></em>.
+Bordeaux, France, July 1&ndash;6, 2018. [<a href="ismp2018.pdf">slides</a>]</li></ul>
+    
+    <ul><li>Proximal activation of smooth functions in splitting algorithms
+for convex minimization,
+<em><a
+href="http://cimi.univ-toulouse.fr/optimisation/en/workshop-optimization-and-structure">Workshop Fundamentals and Algorithms for Structured
+Optimization</a></em>.
+Toulouse, France, June 28&ndash;29, 2018.</li></ul>
+    
+    <ul><li>Image recovery by block-iterative asynchronous proximal splitting,
+<em><a href="https://www.siam-is18.dm.unibo.it">SIAM Conference on Imaging Science</a></em>.
+Bologna, Italy, June 5&ndash;8, 2018.</li></ul>
+    
+    <ul><li>Self-dual classes of operators in nonlinear analysis 
+and optimization,
+<em><a href="http://hli.wayne.edu/conferences/glsiam2018/main.html">SIAM Great Lakes Section Annual Meeting</a></em>.
+Detroit, USA, April 21, 2018.</li></ul>
+    
+    <ul><li>Data analysis via perspective functions,
+<em><a href="https://www.cemmap.ac.uk/event/id/1555">Conference on Machine Learning and Optimisation in Economics</a></em>.
+London, England, March 8&ndash;9, 2018.</li></ul>
+    
+    <ul><li>Primal-dual monotone operator splitting by successive
+outer Bregman projections,
+<em><a
+href="http://www.uoh.cl/opt-va/">International Workshop on Optimization and Variational Analysis</a></em>.
+Termas de Cauquenes, Chile, January 10&ndash;11, 2018.</li></ul>
+    
+    <ul><li>M&eacute;thodes d&#39;&eacute;clatement d&#39;op&eacute;rateurs 
+primales-duales monotones au sens de Bregman,
+<em><a
+href="http://gdrmoa.math.cnrs.fr/activites/journees-annuelles-gdr-moa-mia-2017/">Journ&eacute;es Annuelles des GdR MOA et MIA</a></em>.
+Bordeaux, France, October 17&ndash;20, 2017.</li></ul>
+    
+    <ul><li>Parallel, block-iterative, primal-dual monotone operator splitting,
+<em><a
+href="http://www.birs.ca/events/2017/5-day-workshops/17w5030">BIRS
+Workshop on Splitting Algorithms, Modern Operator Theory, and Applications</a></em>.
+Oaxaca, Mexico, September 17&ndash;22, 2017. [<a href="http://www.birs.ca/events/2017/5-day-workshops/17w5030/videos/watch/201709190901-Combettes.html">video</a>]</li></ul>
+    
+    <ul><li>Optimization via nonautonomous difference equations with affine 
+weights,
+<em><a href="https://www.irit.fr/JFCO/">Eighth French-Chilean
+Optimization Conference</a></em>.
+Toulouse, France, July 4&ndash;7, 2017.</li></ul>
+    
+    <ul><li>Perspective-based proximal data processing,
+<em><a href="http://www.siam.org/meetings/op17/">SIAM Conference 
+on Optimization</a></em>.
+Vancouver, Canada, May 22&ndash;25, 2017.</li></ul>
+    
+    <ul><li>Perspective functions: Constructions and applications,
+<em><a href="http://carma.newcastle.edu.au/meetings/remembranceday/">Jon Borwein&#39;s remembrance conference</a></em>.
+Institut Henri Poincar&eacute;, Paris, France, February 10, 2017.</li></ul>
+    
+    <ul><li>Fonctions perspectives et statistique en grande dimension,
+<em><a href="http://smai.emath.fr/spip.php?article602&lang=fr">
+1&egrave;re Journ&eacute;e Statistiques-Optimisation MAS-MODE de
+la SMAI</a></em>.
+Paris, France, January 9, 2017.</li></ul>
+    
+    <ul><li>M&eacute;thodes proximales pour la r&eacute;gression statistique en 
+grande dimension via des fonctions perspectives,
+<em><a href="http://gdrmoa.math.cnrs.fr/activites/journees-annuelles-gdr-moa-2016/">
+Journ&eacute;es Annuelles du GdR MOA</a></em>.
+Saint-Anne, Guadeloupe, France, November 20&ndash;24, 2016.</li></ul>
+    
+    <ul><li>Block-iterative asynchronous variational image recovery,
+<em><a href="http://cmsa.fas.harvard.edu/workshop-optimization-image-processing/">
+Workshop on Optimization in Image Processing</a></em>.
+Harvard University, Cambridge, MA, June 27&ndash;30, 2016.</li></ul>
+    
+    <ul><li>M&eacute;thodes asynchrones d&#39;&eacute;clatement d&#39;op&eacute;rateurs 
+avec balayage par blocs,
+<em><a href="http://mode2016.sciencesconf.org/">
+Conf&eacute;rence SMAI-MODE 2016</a></em>.
+Toulouse, France, March 23&ndash;25, 2016.</li></ul>
+    
+    <ul><li>Asynchronous block-iterative proximal processing of large data
+sets,
+<em><a href="http://www.di.ens.fr/~aspremon/Houches/index.html">
+International Conference Optimization without Borders,
+in Honor of Yurii Nesterov&#39;s 60th Birthday</a></em>.
+Les Houches, France, February 7&ndash;12, 2016.</li></ul>
+    
+    <ul><li>Horizontal and vertical block decomposition of monotone
+operator splitting algorithms,
+<em><a href="http://terryfest2015.xlim.fr/">International Conference on Variational Analysis, Optimization, and Quantitative Finance in Honor of Terry Rockafellar&#39;s 80th Birthday</a></em>.
+Limoges, France, May 18&ndash;22, 2015.</li></ul>
+    
+    <ul><li>Splitting techniques in the face of huge problem sizes:
+Block-coordinate approaches,
+<em><a href="http://www.maths.ed.ac.uk/~prichtar/Optimization_and_Big_Data_2015/">Optimization and Big Data 2015</a></em>. 
+Edinburgh, Scotland, May 6&ndash;9, 2015.</li></ul>
+    
+    <ul><li>Un processus it&eacute;ratif stochastique et ses applications
+&agrave; l&#39;&eacute;clatement d&#39;op&eacute;rateurs par blocs de 
+variables,
+<em><a href="http://gdrmoa.math.cnrs.fr">Journ&eacute;es
+annuelles du GdR Math&eacute;matiques de l&#39;Optimisation et
+Applications</a></em>. 
+Limoges, France, December 3&ndash;5, 2014.</li></ul>
+    
+    <ul><li>Some aspects of the interplay between convex analysis and monotone
+operator theory,
+<em><a href="http://www.ljll.math.upmc.fr/~plc/sestri/">Worshop on Optimization and Dynamical Processes in Learning and Inverse Problems</a></em>. 
+Sestri-Levante, Italy, September 8&ndash;12, 2014.</li></ul>
+    
+    <ul><li>Relaxation of inconsistent common zero problems,
+<em><a href="http://eventos.cmm.uchile.cl/thibault2014/">Second
+International Conference on Variational Analysis and Optimization</a></em>. 
+Santiago, Chile, January 7&ndash;10, 2014.</li></ul>
+    
+    <ul><li>On the formulation of inverse problems as minimization problems,
+<em><a href="http://www.lss.supelec.fr/MaoriWorkshop/">First Workshop on
+Optimization for Image and Signal Processing</a></em>. 
+&Eacute;cole Polytechnique, Palaiseau, France, November 18&ndash;20, 2013.</li></ul>
+    
+    <ul><li>Can one genuinely split <em>m>2</em> monotone operators?
+<em><a href="http://www.dii.uchile.cl/~adgo2013/">Workshop on Algorithms and Dynamics for Games and Optimization</a></em>. 
+Playa Blanca, Tongoy, Chile, October 14&ndash;18, 2013.
+[<a href="2013open-pbs1.pdf">pdf</a>]</li></ul>    
+</li></ul>
+
+    <ul><li>From convex feasibility to optimization in signal recovery
+and learning,
+<em><a href="http://spars2013.epfl.ch/">SPARS 2013 - Signal Processing with Adaptive Sparse Structured Representations</a></em>. 
+Lausanne, Switzerland, July 8&ndash;11, 2013.</li></ul>
+    
+    <ul><li>Parallel-sum approximation of inconsistent common zero problems,
+<em><a href="http://euro2013.org/">26th European Conference on
+Operations Research</a></em>. 
+Rome, Italy, July 1&ndash;4, 2013.</li></ul>
+    
+    <ul><li>Systems of structured monotone inclusions: Duality, algorithms, 
+and applications,
+<em><a href="http://www.dis.uniroma1.it/~erice2013/">Nonlinear Optimization: a Bridge from Theory to Applications</a></em>. 
+Erice, Italy, June 10&ndash;17, 2013.</li></ul>
+    
+    <ul><li>Algorithmes proximaux pour les probl&egrave;mes d&#39;optimisation
+structur&eacute;s,
+<em><a href="http://www.sciencesmaths-paris.fr/en/horizon-maths-2012-413.htm">Horizon Maths Conference</a></em>. 
+La D&eacute;fense, France, December 19&ndash;20, 2012.</li></ul>
+    
+    <ul><li>Moreau&#39;s proximal decomposition in Banach spaces,
+<em><a href="http://www.unilim.fr/alel2012/">
+ALEL 2012 Conference on Optimization</a></em>.
+Limoges, France, July 2&ndash;4, 2012.</li></ul>
+    
+    <ul><li>The dynamics of forward-backward splitting,
+<em><a href="https://sites.google.com/site/sorin60th/">
+Games and Strategy in Paris</a></em>.
+Paris, France, June 11&ndash;13, 2012.</li></ul>
+    
+    <ul><li>Une extension de la d&eacute;composition proximale de Moreau,
+<em><a href="http://calamar.univ-ag.fr/moa2012/index.html">
+Journ&eacute;es Annuelles du GdR MOA</a></em>.
+Saint-Fran&ccedil;ois, Guadeloupe, France, 4&ndash;7 juin 2012.</li></ul>
+    
+    <ul><li>How many splitting algorithms are there?
+<em><a href="http://www.am2v.cl/lawoc2012/">
+Latin American Workshop on Optimization and Control</a></em>.
+Valpara&iacute;so, Chile, January 10&ndash;13, 2012.</li></ul>
+    
+    <ul><li>Solving composite variational image recovery problems:
+Recent developments and old myths,
+<em><a href="http://via11.uni-hd.de/">
+Symposium on Variational Image Analysis</a></em>.
+Heidelberg, Germany, July 4&ndash;7, 2011.</li></ul>
+    
+    <ul><li>Monotone+skew decomposition of inclusion problems: 
+algorithms and applications,
+<em><a href="http://conferences.irmacs.sfu.ca/jonfest2011/">
+Computational and Analytical Mathematics</a></em>.
+Vancouver, Canada, May 16&ndash;20, 2011.</li></ul>
+    
+    <ul><li>On the cycles in the method of periodic projections,
+<em><a href="http://www.mtm.ufsc.br/~melissa/optimufsc11/">
+Escola de Ver&atilde;o em Otimiza&ccedil;&atilde;o e 
+Aplica&ccedil;&otilde;es</a></em>.
+Florian&oacute;polis, Brazil, March 28-April 1, 2011.</li></ul>
+    
+    <ul><li>Open questions around the Baillon-Haddad theorem,
+<em><a href="http://www.ann.jussieu.fr/~plc/valparaiso2010.html">French-Chilean
+Workshop on Dynamics, Optimization and Learning</a></em>.
+Valpara&iacute;so, Chile, November 22&ndash;26, 2010.</li></ul>
+    
+    <ul><li>Proximity and information,
+<em><a href ="http://mathsci.riken.jp/events/0080.html">Riken
+Conference on Mathematical Sciences and Their Applications</a></em>.
+Kamisuwa, Japan, September 19-October 2, 2010.</li></ul>
+    
+    <ul><li>Solving composite monotone inclusions,
+<em><a href ="http://pages.univ-nc.nc/~bonnel/spcm-2010/confspcm10.htm">Second South Pacific Conference on Mathematics</a></em>.
+Noum&eacute;a, Nouvelle-Cal&eacute;donie, France, 
+August 30-September 3, 2010.</li></ul>
+    
+    <ul><li>Splitting methods for constructing the resolvent of a
+sum of maximal monotone operators,
+<em><a href ="http://grupo.us.es/gfqm127/WOFAO/WOFAO.html">Workshop on Functional Analysis and Optimization</a></em>.
+Sevilla, Spain, April 12&ndash;13, 2010.</li></ul>
+    
+    <ul><li>M&eacute;thodes d&#39;&eacute;clatement proximales en traitement de l&#39;image,
+<em><a href ="http://web.mac.com/maitine.bergounioux/Colloque_2010/Accueil.html">Deuxi&egrave;me Colloque Math&eacute;matiques pour l&#39;Image</a></em>.
+Orl&eacute;ans, France, March 29-April 1, 2010.</li></ul>
+    
+    <ul><li>Proximal splitting methods in signal recovery, <em><a href ="http://www.ceremade.dauphine.fr/~peyre/mia09">
+Mathematics and Image Analysis 2009 - MIA&#39;09
+</a></em>. Paris, France, December 14&ndash;16, 2009. [<a href="mia09.pdf">slides</a>]</li></ul>
+    
+    <ul><li>Duality schemes for solving inclusions, with applications to inverse problems,
+<em><a href ="http://www.birs.ca/birspages.php?task=displayevent&event_id=09w5006">
+Interdisciplinary Workshop on Fixed-Point Algorithms for Inverse 
+Problems in Science and Engineering</a></em>.
+Banff, Canada, November 1&ndash;6, 2009.</li></ul>
+    
+    <ul><li>Primal-dual solution of some monotone inclusions,
+<em><a href ="http://anavar09.math.univ-montp2.fr/">
+Conference on Variational Analysis and Optimization</a></em>.
+Montpellier, France, September 9&ndash;12, 2009.</li></ul>
+    
+    <ul><li>Fenchel-Rockafellar dualization of signal recovery problems,
+<em><a href ="http://www-syscom.univ-mlv.fr/porquerolles2009/">
+Approximation and Optimization in Image 
+Restoration and Reconstruction</a></em>.
+Porquerolles, France, June 8&ndash;12, 2009.</li></ul>
+    
+    <ul><li>Proximal methods for nonsmooth inverse problems,
+<em><a href ="http://www.math.hkbu.edu.hk/SCPDE08/">
+International Conference on Scientific Computing and Partial 
+Differential Equations</a></em>.
+Hong Kong, December 8&ndash;13, 2008.</li></ul>
+    
+    <ul><li>Splitting methods for the resolvent of a sum of monotone operators,
+<em><a href ="http://people.ok.ubc.ca/ylucet/wcom/wcom.php">
+West Coast Optimization Meeting</a></em>.
+Kelowna, Canada, September 5&ndash;6, 2008.</li></ul>
+    
+    <ul><li>Dykstra&#39;s method for monotone operators,
+<em><a href ="http://www.ecp6.jussieu.fr/dynamiques_et_optimisations/index.html">
+Dynamics and Optimization Conference</a></em>.
+Paris, France, June 9&ndash;11, 2008.</li></ul>
+    
+    <ul><li>On the moment problem,
+<em><a href ="http://champion.univ-tln.fr/JFCO.html">
+Sixth French-Chilean Optimization Conference</a></em>.
+Toulon, France, May 19&ndash;21, 2008.</li></ul>
+    
+    <ul><li>Visco-penalization of the sum of two monotone operators,
+<em><a href ="http://www.iict.konan-u.ac.jp/ICOTA7">Seventh 
+International Conference on Optimization: Techniques and 
+Applications</a></em>. Kobe, Japan, December 12&ndash;15, 2007.</li></ul>
+    
+    <ul><li>Sparsities and iterative thresholding,
+<em><a href ="http://www.math.univ-paris13.fr/~malgouy/MIPM/">
+Rencontre sur le Traitement Math&eacute;matique des Images</a></em>. 
+CIRM, Luminy, France, September 3&ndash;7, 2007.</li></ul>
+    
+    <ul><li>Cyclic minimizations,
+<em><a href ="http://www.math.univ-montp2.fr/~deciprox/">
+Conf&eacute;rence Optimisation, Jeux et Dynamique de la 
+D&eacute;cision</a></em>. Avignon, France, June 25&ndash;26, 2007.</li></ul>
+    
+    <ul><li>Proximal thresholding algorithm for minimization over orthonormal bases,
+<em><a href ="http://www.unilim.fr/nva2007">
+International Conference on Nonlinear and Variational Analysis</a></em>. 
+Limoges, France, June 20&ndash;22, 2007.</li></ul>
+    
+    <ul><li>Signal-theoretic applications of monotone operator splitting methods,
+<em><a href ="http://gala.univ-perp.fr/~aussel/CIMODE06/">
+International Conference on Mathematics of Optimization and Decision 
+Making</a></em>.
+Guadeloupe, France, April 18&ndash;21, 2006.</li></ul>
+    
+    <ul><li>Convergence of approximating curves for monotone inclusions 
+and their associated dynamical systems,
+<em><a href ="http://icam2006.cmm.uchile.cl/">
+International Congress on the Applications of Mathematics</a></em>.
+Santiago, Chile, March 13&ndash;17, 2006.</li></ul>
+    
+    <ul><li>D&eacute;composition d&#39;op&eacute;rateurs pour les formulations 
+variationnelles lisses et non-lisses en traitement de l&#39;image,
+<em><a href ="http://math1.unice.fr/~luis/image2006/">
+Journ&eacute;es Math&eacute;matiques de l&#39;Image</a></em>.
+Nice, France, January 12&ndash;13, 2006.</li></ul>
+    
+    <ul><li>Operator splitting methods in inverse problems,
+<em><a href ="http://pages.univ-nc.nc/~bonnel/lastconf/confsp.htm">
+First South Pacific Conference on Mathematics</a></em>.
+Noum&eacute;a, Nouvelle Cal&eacute;donie, France, 
+August 29-September 2, 2005.</li></ul>
+    
+    <ul><li>Viscosity solutions of joint equilibrium problems,
+<em><a href ="http://www.cmm.uchile.cl/flacam05/">
+VII French-Latin American Congress on Applied Mathematics</a></em>.
+Santiago, Chile, January 11&ndash;18, 2005.</li></ul>
+    
+    <ul><li>Proximal image denoising and recovery, <em><a href ="http://geodisi.u-strasbg.fr/ciin/">
+Workshop Contenu Informatif des Images Num&eacute;riques</a></em>.
+Cachan, France, November 25&ndash;26, 2004.</li></ul>
+
+</div>
+
+<div id="Events" class="tabContent">
+    <h2>Events: conference and seminar organization</h2>
+
+<ul><li>
+<strong>Nonlinear Analysis Seminar</strong><br>
+Department of Mathematics, North Carolina State University
+[<a href="https://wp.math.ncsu.edu/nat/differential-equations-nonlinear-analysis-seminars/">web</a>]
+</li></ul>
+
+<ul><li>
+<strong>VIASM Summer School on Optimization and Decision 
+Theory</strong><br>
+Quy Nh&oacute;n, Vietnam, July 13&ndash;15, 2026.
+[<a href="https://viasm.edu.vn/en/hdkh/SWOPDT-2026">web</a>]
+</li></ul>
+
+<ul><li>
+<strong>
+Neuvi&egrave;mes Journ&eacute;es Franco-Chiliennes d'Optimisation
+</strong><br>
+Perpignan, France, 29 juin&ndash;1er juillet 2022.
+[<a href="https://eventos.cmm.uchile.cl/jfco2022/">web</a>]
+</li></ul>
+
+<ul><li>
+<strong>3rd Workshop on Operator Splitting Methods in Data Analysis</strong><br>
+Flatiron Institute, New York, USA,
+March 2020
+[<a href="https://www.simonsfoundation.org/event/3rd-workshop-operator-splitting-methods-in-data-analysis/">web</a>]
+</li></ul>
+
+<ul><li>
+<strong>2nd Workshop on Operator Splitting Methods in Data Analysis</strong><br>
+New York, USA, March 2019
+[<a href="https://www.simonsfoundation.org/event/operator-splitting-methods-in-data-analysis/">web</a>]
+</li></ul>
+
+<ul><li>
+<strong>1st Workshop on Operator Splitting Methods in Data Analysis</strong><br>
+SAMSI, Research Triangle Park, USA, March 2018
+[<a href="https://www.samsi.info/programs-and-activities/research-workshops/operator-splitting-methods-data-analysis/">web</a>] 
+</li></ul> 
+
+<ul><li>
+<strong>French Days on Optimization &amp; Decision 
+Science</strong><br>
+Autrans, France, March 2018
+[<a href="http://smai-mode2018.imag.fr/">web</a>] [<a href="https://pcombet.math.ncsu.edu/mode2018.png">poster</a>]
+</li></ul>
+
+<ul><li>
+<strong>GdR MOA</strong><br>
+Guadeloupe, France, Novembre 2016
+[<a href="http://gdrmoa.math.cnrs.fr/activites/journees-annuelles-gdr-moa-2016/">web</a>] 
+</li></ul>
+
+<ul><li>
+<strong>Data Science 2015</strong><br>
+Paris, France, Juillet 2015
+[<a href="./data2015/index.html">web</a>] 
+</li></ul>
+
+<ul><li>
+<strong>Ottimizzazione e Processi Dinamici in Apprendimento
+istico e Problemi Inversi</strong><br>
+Sestri Levante, Italia, Settembre 2014
+[<a href="./sestri/index.html">web</a>] 
+</li></ul>
+
+    <ul><li>
+    <strong>Algorithms and Dynamics for Games and Optimization</strong><br>
+    Playa Blanca, Chile, October 2013
+    [<a href="https://www.dii.uchile.cl/~adgo2013/">web</a>] 
+    </li></ul>
+
+    <ul><li>
+    <strong>Optimization, Games, and Dynamics</strong><br>
+    Paris, France, November 2011
+    [<a href="./ihp2011.html">web</a>] 
+    </li></ul>
+
+    <ul><li>
+    <strong>Dynamiques, Optimisation et Apprentissage</strong><br>
+    Valparaiso, Chile, November 2010
+    [<a href="./valparaiso2010.html">web</a>] 
+    </li></ul>
+
+    <ul><li>
+    <strong>Fixed-Point Algorithms for Inverse Problems in Science
+and Engineering</strong><br>
+    Banff, Canada, November 2009
+    [<a href="https://www.birs.ca/birspages.php?task=displayevent&event_id=09w5006">web</a>] 
+    </li></ul>
+
+    <ul><li>
+    <strong>Approximation and Optimization in Image Restoration and
+Reconstruction</strong><br>
+    Porquerolles, France, June 2009
+    [<a href="https://www-syscom.univ-mlv.fr/porquerolles2009/">web</a>] 
+    </li></ul>
+
+    <ul><li>
+    <strong>Conf&eacute;rence sur l'Optimisation and la
+D&eacute;cision</strong><br>
+    Paris, France, Avril 2007
+    [<a href="./code2007.html">web</a>] 
+    </li></ul>
+
+    <ul><li>
+    <strong>Mathematical Methods for Multi-Channel
+    Image Processing</strong><br>
+    Beijing, China, July 2006
+    [<a href="./pekin06.html">web</a>] 
+    </li></ul>
+
+    <ul><li>
+    <strong>Math&eacute;matiques du Traitement de 
+    l'Image</strong><br>
+    Hanoi, Vietnam, Septembre 2004
+    [<a href="./hanoi04.html">web</a>] 
+    </li></ul>
+
+    <ul><li>
+    <strong>Math&eacute;matiques de l'Optimisation et de la 
+    D&eacute;cision</strong><br>
+    Le Havre, France, Mars 2004
+    [<a href="https://awal.univ-lehavre.fr/mode2004/">web</a>] 
+    </li></ul>
+
+    <ul><li>
+    <strong>Monotone Operators and Applications</strong><br>
+    Nice, France, February 2003
+    [<a href="./monotone.html">web</a>] 
+    </li></ul>
+
+    <ul><li>
+    <strong>CEMRACS</strong><br>
+    Luminy, France, Juillet 2002
+    [<a href="http://smai.emath.fr/cemracs/cemracs02/intro_en.php3">web</a>] 
+    </li></ul>
+
+</div>
+
+<div id="Teaching" class="tabContent">
+    <h2>Teaching</h2>
+
+    <ul><li>
+    <strong>MA515 Functional Analysis</strong>, 
+    Spring 2027
+    [<a href="./ma515.pdf">syllabus</a>]
+    </li></ul>
+
+    <ul><li>
+    <strong>MA716 Advanced Functional Analysis</strong>, 
+    Fall 2026
+    [<a href="./ma716.pdf">syllabus</a>]
+    </li></ul>
+
+    <ul><li>
+    <strong>MA715 Measure and Integration Theory</strong>, 
+    Spring 2026
+    [<a href="./ma715.pdf">syllabus</a>]
+    </li></ul>
+
+    <ul><li>
+    <strong>MA542 Convex Optimization Methods in Data
+    Science</strong>, 
+    Spring 2026
+    [<a href="./ma542.pdf">syllabus</a>]
+    </li></ul>
+
+    <ul><li>
+    <strong>MA719 Vector Space Methods in Systems 
+    Optimization &ndash; Optima and Equilibria</strong>, 
+    Fall 2025
+    [<a href="./ma719.pdf">syllabus</a>]
+    </li></ul>
+
+    <ul><li>
+    <strong>MA493/MA591 Introduction to Hilbert Spaces</strong>, 
+    Fall 2024
+    [<a href="./ma493.pdf">syllabus</a>]
+    </li></ul>
+
+    <ul><li>
+    <strong>MA532 Dynamical Systems and Ordinary Differential
+    Equations</strong>, 
+    Spring 2024
+    [<a href="./ma532.pdf">syllabus</a>]
+    </li></ul>
+
+    <ul><li>
+    <strong>MA797 Convex Analysis</strong>, Fall 2021
+    [<a href="./ma797.pdf">syllabus</a>]
+    </li></ul>
+
+</div>
+
+<div id="Genealogy" class="tabContent">
+    <h2>Academic genealogy</h2>
+
+    <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=85520">Mathematics Genealogy Project</a>
+
+<ul>
+
+<li><a href ="https://en.wikipedia.org/wiki/Sharaf_al-Din_al-Tusi">
+Sharaf al-Dīn al-Ṭūsī</a> </li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Ibn_Yunus">
+Kamāl al-Dīn Ibn Yūnus</a></li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Nasir_al-Din_al-Tusi">
+Nasir al-Dīn al-Ṭūsī</a> </li>
+
+<li><a href ="https://link.springer.com/referenceworkentry/10.1007%2F978-0-387-30400-7_1264">
+Shams al‐Dīn al‐Bukhārī</a> (Maragheh Observatory)</li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Gregory_Choniades">
+Gregory Chioniadis</a> (Ilkhans Court at Tabriz, 1296)</li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Manuel_Bryennios">
+Manuel Bryennios</a></li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Theodore_Metochites">
+Theodore Metochites</a> (1315)</li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Gregory_Palamas">
+Gregory Palamas</a></li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Neilos_Kabasilas">
+Nilos Kabasilas</a> (1363)</li>
+        
+<li><a href ="https://en.wikipedia.org/wiki/Demetrios_Kydones">Demetrios 
+Kydones</a></li>
+        
+<li><a href ="https://en.wikipedia.org/wiki/Gemistus_Pletho">Georgios 
+Plethon Gemistos</a> (1380)</li>
+        
+<li><a href ="https://en.wikipedia.org/wiki/Basilios_Bessarion">Basilios 
+Bessarion</a> (Mystras, 1436)</li>
+        
+<li><a href ="https://en.wikipedia.org/wiki/John_Argyropoulos">Johannes 
+Argyropoulos</a> (Universit&agrave; degli Studi di Padova, 1444)</li>
+        
+<li><a href ="https://en.wikipedia.org/wiki/Marsilio_Ficino">Marsilio 
+Ficino</a> (Universit&agrave; degli Studi di Firenze, 1462)</li>
+        
+<li><a href ="https://en.wikipedia.org/wiki/Poliziano">Angelo 
+Poliziano</a> (Universit&agrave; degli Studi di Firenze, 1477)</li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Petrus_Ryff">Scipione 
+Fortiguerra</a> (Universit&agrave; degli Studi di Firenze, 1493)</li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Girolamo_Aleandro">Girolamo 
+Aleandro</a> (Universit&agrave; degli Studi di Padova, 1499)</li>
+
+<li><a href ="https://link.springer.com/chapter/10.1007/978-94-017-4814-8_89">
+Rutger Rescius</a> (Universit&eacute; de Paris, 1513)</li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Johann_Winter_von_Andernach">
+Johannes Winter von Andernach</a> 
+(Universit&eacute; de Louvain, 1527)</li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Guillaume_Rondelet">
+Guillaume Rondelet</a> (Universit&eacute; de Paris, 1538)</li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Felix_Plater">
+Felix Plater</a> (Universit&eacute; de Montpellier, 1557)</li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Petrus_Ryff">Petrus Ryff</a> (Universit&auml;t Basel, 1584)</li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Emmanuel_Stupanus">Emmanuel Stupanus</a> (Universit&auml;t Basel, 1613)</li>
+        
+<li><a href ="https://en.wikipedia.org/wiki/Emmanuel_Stupanus">
+Nikolaus Eglinger</a> (Universit&auml;t Basel, 1660)</li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Johann_Bernoulli">Johann
+Bernoulli</a> (Universit&auml;t Basel, 1690)</li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Leonhard_Euler">Leonhard Euler</a> (Universit&auml;t Basel, 1726)</li>
+
+        <li><a href ="https://en.wikipedia.org/wiki/Joseph_Louis_Lagrange">Joseph-Louis Lagrange</a> (Universit&agrave; di Torino, 1754)</li>
+
+<li><a href ="https://en.wikipedia.org/wiki/Sim%C3%A9on_Denis_Poisson">Sim&eacute;on D. Poisson</a> 
+(&Eacute;cole Polytechnique, 1800)</li>
+        <li><a href ="https://en.wikipedia.org/wiki/Michel_Chasles">Michel Chasles</a> (&Eacute;cole Polytechnique, 1814)</li>
+        <li><a href ="https://en.wikipedia.org/wiki/Hubert_Anson_Newton">Hubert A. Newton</a> (Yale University, 1850)</li>
+        <li><a href ="https://en.wikipedia.org/wiki/E._H._Moore">E. Hastings Moore</a> (Yale University, 1885)</li>
+        <li><a href ="https://en.wikipedia.org/wiki/George_David_Birkhoff">George D. Birkhoff</a> (University of Chicago, 1907)</li>
+        <li><a href ="https://en.wikipedia.org/wiki/Marshall_Harvey_Stone">Marshall H. Stone</a> (Harvard University, 1926)</li>
+        <li><a href ="https://en.wikipedia.org/wiki/William_Frederick_Eberlein">William F. Eberlein</a> (Harvard University, 1942)</li>
+        <li><a href ="https://en.wikipedia.org/wiki/A._Wayne_Wymore">A. Wayne Wymore</a> (University of Wisconsin-Madison, 1955)</li>
+        <li><a href ="https://universityofarizona.academia.edu/BOBBYHUNT">Bobby R. Hunt</a> (University of Arizona, 1967)</li>
+
+<li><a href ="https://ieeexplore.ieee.org/author/37299969600">
+H. Joel Trussell</a> (University of New Mexico, 1976)</li>
+
+<li><a href ="https://pcombet.math.ncsu.edu">
+Patrick L. Combettes</a>
+(North Carolina State University, 1989)</li>
+
+<ul>
+<li><a href
+="https://www.researchgate.net/scientific-contributions/6270143_H_Puh">Hong
+Puh</a> (City University of New York, 1996)</li>
+
+<li><a href ="https://www.linkedin.com/in/jian-luo-19550a5">
+Jian Luo</a> 
+(City University of New York, 2000)</li>
+
+<li><a href ="https://who.rocq.inria.fr/Sever.Hirstoaga/">
+Sever A. Hirstoaga</a> 
+(Universit&eacute; Pierre et Marie Curie, 2006)</li>
+
+<li><a href ="http://sites.google.com/site/vrwajs/">
+Val&eacute;rie R. Wajs</a> 
+(Universit&eacute; Pierre et Marie Curie, 2007)</li>
+
+<li><a href ="http://www.freehackers.org/thomas/">
+Thomas D. Capricelli</a> 
+(Universit&eacute; Pierre et Marie Curie, 2008)</li>
+
+<li><a href ="http://lbriceno.mat.utfsm.cl">
+Luis M. Brice&ntilde;o-Arias</a> 
+(Universit&eacute; Pierre et Marie Curie, 2011)</li>
+
+<li><a href ="https://scholar.google.com/citations?user=zf7yzUQAAAAJ&hl=en&oi=ao">
+B&#7857;ng C&ocirc;ng V&utilde;</a> 
+(Universit&eacute; Pierre et Marie Curie, 2013)</li>
+
+<li><a href ="https://sites.google.com/view/vanquangnguyen">
+Quang V&#259;n Nguy&#7877;n</a> 
+(Universit&eacute; Pierre et Marie Curie, 2015)</li>
+
+<li><a href ="https://www.ljll.math.upmc.fr/~glaudin/index.html">
+Lilian E. Glaudin</a> 
+(Sorbonne Universit&eacute;, 2019)</li>
+
+<li><a href="https://zevwoodstock.github.io/">
+Zev C. Woodstock</a>
+(North Carolina State University, 2021)</li>
+
+<li><a href="https://buinhutminh.github.io/">
+Minh N. B&ugrave;i</a>
+(North Carolina State University, 2021)</li>
+
+<li><a href="https://djcornejo.github.io/">
+Diego J. Cornejo</a> 
+(North Carolina State University, 2026)</li>
+
+<li><a href="https://javier.madariaga.cl">
+Javier I. Madariaga</a> 
+(North Carolina State University, 2026)</li>
+
+</ul>
+</div>
+
+<div id="People" class="tabContent">
+    <h2>People</h2>
+
+<img src="NC-State1.jpg" alt="photo" style="width:342px;
+height:273px">
+<img src="NC-State2.jpg" alt="photo" style="width:342px;
+height:273px">
+<br>
+
+Left: PLC with Ph.D. students Vivar-Vargas, Mayrand, Madariaga, and
+Cornejo, NC State, April 2026.
+
+    <h3>Current Ph.D. students</h3>
+
+    <ul>
+<li><strong><a href="https://julienmayrand.wordpress.ncsu.edu/">Julien N. Mayrand</strong></a></strong></li>
+<li><strong><a
+href="https://khris-vi.github.io/">Crist&oacute;bal L. Vivar-Vargas</strong></a></strong></li>
+    </ul>
+
+    <h3>Former Ph.D. students</h3>
+
+   <ul><li>
+<strong><a href="https://javier.madariaga.cl">Javier I.
+Madariaga</strong></a>,
+North Carolina State University, 2026<br>
+<em>Stochastic Iterations in Hilbertian Nonlinear 
+Analysis</em></li></ul>
+
+
+   <ul><li>
+<strong><a href="https://djcornejo.github.io/">Diego J. Cornejo</strong></a>, 
+North Carolina State University, 
+2026<br><em>Resolvent and Proximal Compositions: Theory 
+and Applications</em></li></ul>
+
+    <ul><li>
+<strong><a href="https://buinhutminh.github.io/">
+Minh N. B&ugrave;i</strong></a>, North Carolina State University, 
+2021<br><em>The Warped Resolvent of a Set-Valued Operator: Theory 
+and Applications</em> </li></ul>
+
+    <ul><li>
+<strong><a href="https://zevwoodstock.github.io/">
+Zev C. Woodstock</strong></a>, North Carolina State University,
+2021<br>
+<em>Construction of Functions from Nonlinear Transformations</em>
+    </li></ul>
+
+    <ul><li>
+    <strong><a href
+="https://www.ljll.math.upmc.fr/~glaudin/index.html">Lilian E.
+Glaudin</a></strong>, Sorbonne Universit&eacute;
+(formerly Universit&eacute; Pierre et Marie Curie), 2019<br>
+    <em>Strat&eacute;gies Multicouche, avec M&eacute;moire, et
+&agrave; M&eacute;trique Variable en M&eacute;thodes de Point Fixe
+pour l&#39;&Eacute;clatement d&#39;Op&eacute;rateurs Monotones et
+l&#39;Optimisation
+<br>
+(Strategies with Multiple Layers, Memory, and
+Variable Metric in Fixed Point Methods for Monotone Operator
+Splitting and Optimization)</em>
+    </li></ul>
+
+    <ul><li>
+    <strong><a href ="https://sites.google.com/view/vanquangnguyen">Quang V&#259;n Nguy&#7877;n</a></strong>, Universit&eacute; Pierre et Marie Curie, 2015<br>
+    <em>M&eacute;thodes d&#39;&Eacute;clatement Bas&eacute;es sur
+les Distances de Bregman pour les Inclusions Monotones Composites
+et l&#39;Optimisation 
+    <br>(Splitting Methods Based on Bregman Distances for Composite
+Monotone Inclusions and Optimization)</em>
+    </li></ul>
+
+    <ul><li>
+    <strong><a href ="https://scholar.google.com/citations?user=zf7yzUQAAAAJ&hl=en&oi=ao">B&#7857;ng C&ocirc;ng V&utilde;</a></strong>, Universit&eacute; Pierre et Marie Curie, 2013<br>
+    <em>Inclusions Monotones en Dualit&eacute; et Applications 
+    <br>(Monotone Inclusions in Duality and Applications)</em>
+    </li></ul>
+
+    <ul><li>
+    <strong><a href ="http://lbriceno.mat.utfsm.cl">Luis M. Brice&ntilde;o-Arias</a></strong>, Universit&eacute; Pierre et Marie Curie, 2011<br>
+    <em>Probl&egrave;mes d&#39;Inclusions Coupl&eacute;es :
+&Eacute;clatement, Algorithmes et Applications 
+    <br>(Coupled Inclusions Problems: Splitting, Algorithms, and
+Applications)</em>
+    </li></ul>
+
+    <ul><li>
+    <strong><a href ="http://www.freehackers.org/thomas/">Thomas D. Capricelli</a></strong>, Universit&eacute; Pierre et Marie Curie, 2008<br>
+    <em>Algorithmes de Projections Convexes
+G&eacute;n&eacute;ralis&eacute;es et Applications en Imagerie
+M&eacute;dicale 
+    <br>(Generalized Convex Projection Algorithms and Applications
+in Medical Imaging)</em>
+    </li></ul>
+
+    <ul><li>
+    <strong><a href ="http://sites.google.com/site/vrwajs/">Val&eacute;rie R. Wajs</a></strong>, Universit&eacute; Pierre et Marie Curie, 2007<br>
+    <em>D&eacute;compositions et Algorithmes Proximaux pour
+l&#39;Analyse et le Traitement It&eacute;ratif des Signaux 
+    <br>(Proximal Decompositions and Algorithms for Signal Analysis
+and Iterative Signal Processing)</em>
+    </li></ul>
+
+    <ul><li>
+    <strong><a href ="https://who.rocq.inria.fr/Sever.Hirstoaga/">Sever A. Hirstoaga</a></strong>, Universit&eacute; Pierre et Marie Curie, 2006<br>
+    <em>Approximation et R&eacute;solution de Probl&egrave;mes
+d&#39;&Eacute;quilibre, de Point Fixe et d&#39;Inclusion Monotone 
+    <br>(Approximation and Numerical Solution of Equilibrium, Fixed
+Point, and Monotone Inclusion Problems)</em>
+    </li></ul>
+    
+    <ul><li>
+    <strong><a href ="https://www.linkedin.com/in/jian-luo-19550a5">
+    Jian Luo</a></strong>, City University of New York, 2000<br>
+    <em>Non-Differentiable Constrained Signal Restoration by Subgradient Level Methods</em>
+    </li></ul>
+
+    <ul><li>
+    <strong><a href ="https://www.researchgate.net/scientific-contributions/6270143_H_Puh">
+    Hong Puh</a></strong>, City University of New York, 1996<br>
+    <em>Operator Theoretic Image Coding</em>
+    </li></ul>
+
+    <h3>Nonlinear Analysis Thematic Group</h3>
+
+    [<a href="https://wp.math.ncsu.edu/nat">web</a>]
+</div>
+
+<script>
+function openTab(tabTitle) {
+    var i, tabContent;
+    tabContent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabContent.length; i++) {tabContent[i].style.display = "none"}
+    document.getElementById(tabTitle).style.display = "block";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+
+</html>
+
